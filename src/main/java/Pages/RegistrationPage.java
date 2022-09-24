@@ -117,7 +117,7 @@ public class RegistrationPage extends PageBase{
 
 
     public void selectCountry (Country country) {
-        waitWithSeconds(500);
+        waits(500);
         List <WebElement> CountryOptions = countryCodeList.findElements(By.tagName("li"));
 
                 switch (country) {

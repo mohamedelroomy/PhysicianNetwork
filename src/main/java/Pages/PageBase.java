@@ -55,7 +55,7 @@ public class PageBase {
         actions = new Actions(driver);
         actions.sendKeys(txt).build().perform();
     }
-    public void waitWithSeconds(int sec){
+    public void waits(int sec){
         try {
             Thread.sleep(sec);
         }
