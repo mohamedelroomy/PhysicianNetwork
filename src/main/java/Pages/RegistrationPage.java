@@ -9,11 +9,9 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
-
 import java.time.Duration;
 import java.util.List;
-import static Enums.Country.Egypt;
-import static Enums.Country.SaudiArabia;
+
 
 public class RegistrationPage extends PageBase{
 
@@ -50,9 +48,6 @@ public class RegistrationPage extends PageBase{
 
     @FindBy (id = "registrationPassword")
     WebElement passwordInput;
-
-    @FindBy (xpath = "//input[@type = 'radio']")
-    List<WebElement> genders;
 
     @FindBy (id = "registrationGenderMale")
     WebElement maleGender;
@@ -119,27 +114,14 @@ public class RegistrationPage extends PageBase{
     public void selectCountry (Country country) {
         List <WebElement> CountryOptions = countryCodeList.findElements(By.tagName("li"));
         new WebDriverWait(driver, Duration.ofSeconds(20)).until(ExpectedConditions.visibilityOfAllElements(CountryOptions));
-
-                switch (country) {
-                    case Egypt:
-                        for (WebElement e : CountryOptions) {
-                            if (e.getText().equalsIgnoreCase(Egypt.getCode())) {
-                                clickOnElement(e);
-                            }
-                        }
-                        break;
-                    case SaudiArabia:
-                        for (WebElement e : CountryOptions) {
-                            if (e.getText().equalsIgnoreCase(SaudiArabia.getCode())) {
-                                clickOnElement(e);
-                            }
-                        }
-                        break;
-                    default:
-                        System.out.println("wrong Country");
-                        break;
-
-                }
+        for (WebElement e : CountryOptions) {
+            if (e.getText().equalsIgnoreCase(country.getCode())) {
+                clickOnElement(e);
+            }
+            else {
+                System.out.println("wrong Country");
+            }
+        }
     }
 
 
