@@ -117,8 +117,8 @@ public class RegistrationPage extends PageBase{
 
 
     public void selectCountry (Country country) {
-        waits(500);
         List <WebElement> CountryOptions = countryCodeList.findElements(By.tagName("li"));
+        new WebDriverWait(driver, Duration.ofSeconds(20)).until(ExpectedConditions.visibilityOfAllElements(CountryOptions));
 
                 switch (country) {
                     case Egypt:
@@ -140,8 +140,6 @@ public class RegistrationPage extends PageBase{
                         break;
 
                 }
-
-
     }
 
 
