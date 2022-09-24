@@ -14,7 +14,7 @@ public class RegistrationTest extends TestBase {
     RegistrationPage SignUp;
 
     @Test
-    public void userCanRegisterSuccessfully () {
+    public void userCanRegisterSuccessfully ()   {
         login = new LoginPage(driver);
         SignUp = new RegistrationPage(driver);
         login.openRegistrationPage();

@@ -55,6 +55,14 @@ public class PageBase {
         actions = new Actions(driver);
         actions.sendKeys(txt).build().perform();
     }
+    public void waitWithSeconds(int sec){
+        try {
+            Thread.sleep(sec);
+        }
+        catch (InterruptedException e){
+            System.out.println(e);
+        }
+    }
 
     public void scroll(int coordinate)
     {

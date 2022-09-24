@@ -9,6 +9,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+
 import java.time.Duration;
 import java.util.List;
 import static Enums.Country.Egypt;
@@ -66,7 +67,7 @@ public class RegistrationPage extends PageBase{
 
 
     public void completeUserInfo (String FirstName, String LastName,Specialties Specialty,Country country,
-                                  String PhoneNumber,String Email,String Password, Gender gender) {
+                                  String PhoneNumber,String Email,String Password, Gender gender)  {
         insertTextIntoElement(firstName,FirstName);
         insertTextIntoElement(lastName, LastName);
         clickOnElement(mainSpecialtyDDL);
@@ -80,9 +81,8 @@ public class RegistrationPage extends PageBase{
     }
 
 
-    public void selectMainSpecialty(Specialties Specialty){
-        new WebDriverWait(driver, Duration.ofSeconds(20)).until(ExpectedConditions.visibilityOf(specialtySearch));
-
+    public void selectMainSpecialty(Specialties Specialty)  {
+        new WebDriverWait(driver, Duration.ofSeconds(20)).until(ExpectedConditions.visibilityOf(mainSpecialtyList));
         //insert specialty name
         insertTextIntoElement(specialtySearch,Specialty.getName());
         new WebDriverWait(driver, Duration.ofSeconds(20)).until(ExpectedConditions.visibilityOf(mainSpecialtyList));
@@ -116,28 +116,32 @@ public class RegistrationPage extends PageBase{
 
 
 
-    public void selectCountry (Country country){
-        new WebDriverWait(driver, Duration.ofSeconds(20)).until(ExpectedConditions.visibilityOf(countryCodeList));
+    public void selectCountry (Country country) {
+        waitWithSeconds(500);
         List <WebElement> CountryOptions = countryCodeList.findElements(By.tagName("li"));
-        switch (country) {
-            case Egypt:
-                for (WebElement e: CountryOptions) {
-                    if (e.getText().equalsIgnoreCase(Egypt.getCode())){
-                        clickOnElement(e);
-                    }
+
+                switch (country) {
+                    case Egypt:
+                        for (WebElement e : CountryOptions) {
+                            if (e.getText().equalsIgnoreCase(Egypt.getCode())) {
+                                clickOnElement(e);
+                            }
+                        }
+                        break;
+                    case SaudiArabia:
+                        for (WebElement e : CountryOptions) {
+                            if (e.getText().equalsIgnoreCase(SaudiArabia.getCode())) {
+                                clickOnElement(e);
+                            }
+                        }
+                        break;
+                    default:
+                        System.out.println("wrong Country");
+                        break;
+
                 }
-                break;
-            case SaudiArabia:
-                for (WebElement e: CountryOptions) {
-                    if (e.getText().equalsIgnoreCase(SaudiArabia.getCode())){
-                        clickOnElement(e);
-                    }
-                }
-                break;
-            default:
-                System.out.println("wrong Country");
-                break;
-        }
+
+
     }
 
 
