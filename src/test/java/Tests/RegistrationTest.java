@@ -8,8 +8,10 @@ import Pages.RegistrationPage;
 import org.testng.annotations.Test;
 
 import static Enums.Country.Egypt;
+import static Enums.Country.getRandomCountry;
 
 public class RegistrationTest extends TestBase {
+    Country country = getRandomCountry();
     LoginPage login;
     RegistrationPage SignUp;
 
@@ -19,7 +21,7 @@ public class RegistrationTest extends TestBase {
         SignUp = new RegistrationPage(driver);
         login.openRegistrationPage();
         SignUp.completeUserInfo("mohamed","elroomy", Specialties.getRandomSpecialty(),
-                Egypt,Egypt.generatePhoneNumber(), generateEmail(),
+                country,country.generatePhoneNumber(), generateEmail(),
                 generatePassword(), Gender.male);
         SignUp.submit();
     }

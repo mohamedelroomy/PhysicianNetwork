@@ -1,5 +1,7 @@
 package Enums;
 
+import java.util.Random;
+
 public enum Country {
     Egypt{
         final String Code ="+20";
@@ -27,4 +29,10 @@ public enum Country {
     };
     public abstract String getCode();
     public abstract String generatePhoneNumber();
+    public static Country getRandomCountry(){
+        int length = Country.values().length;
+        Random random = new Random();
+        int randomIndex =random.ints(0,length).findFirst().getAsInt();
+        return Country.values()[randomIndex];
+    };
 }
