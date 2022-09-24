@@ -11,8 +11,7 @@ public enum Country {
         public String generatePhoneNumber() {
             int number1 = (int)((Math.random() * 9000000)+1000000);
             int number2 = (int)((Math.random() * 900)+100);
-            String number = String.valueOf(number1)+String.valueOf(number2);
-            return number;
+            return number1 +String.valueOf(number2);
         }
     },
     SaudiArabia{
@@ -23,8 +22,7 @@ public enum Country {
         public String generatePhoneNumber() {
             int number1 = (int)((Math.random() * 900000)+100000);
             int number2 = (int)((Math.random() * 900)+100);
-            String number = String.valueOf(number1)+String.valueOf(number2);
-            return number;
+            return number1 +String.valueOf(number2);
         }
     };
     public abstract String getCode();
@@ -34,5 +32,5 @@ public enum Country {
         Random random = new Random();
         int randomIndex =random.ints(0,length).findFirst().getAsInt();
         return Country.values()[randomIndex];
-    };
+    }
 }

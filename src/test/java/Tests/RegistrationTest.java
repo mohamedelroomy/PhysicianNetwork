@@ -6,8 +6,6 @@ import Enums.Specialties;
 import Pages.LoginPage;
 import Pages.RegistrationPage;
 import org.testng.annotations.Test;
-
-import static Enums.Country.Egypt;
 import static Enums.Country.getRandomCountry;
 
 public class RegistrationTest extends TestBase {
