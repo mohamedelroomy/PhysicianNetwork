@@ -78,6 +78,7 @@ public class RegistrationPage extends PageBase{
 
     public void selectMainSpecialty(Specialties Specialty)  {
         new WebDriverWait(driver, Duration.ofSeconds(20)).until(ExpectedConditions.visibilityOf(mainSpecialtyList));
+        waits(100);
         //insert specialty name
         insertTextIntoElement(specialtySearch,Specialty.getName());
         new WebDriverWait(driver, Duration.ofSeconds(20)).until(ExpectedConditions.visibilityOf(mainSpecialtyList));
@@ -112,18 +113,15 @@ public class RegistrationPage extends PageBase{
 
 
     public void selectCountry (Country country) {
-        List <WebElement> CountryOptions = countryCodeList.findElements(By.tagName("li"));
+        List<WebElement> CountryOptions = countryCodeList.findElements(By.tagName("li"));
         new WebDriverWait(driver, Duration.ofSeconds(20)).until(ExpectedConditions.visibilityOfAllElements(CountryOptions));
+        waits(500);
         for (WebElement e : CountryOptions) {
             if (e.getText().equalsIgnoreCase(country.getCode())) {
                 clickOnElement(e);
             }
-            else {
-                System.out.println("wrong Country");
-            }
         }
     }
-
 
     public void submit (){
         clickOnElement(createAccountBTN);
