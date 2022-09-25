@@ -81,6 +81,7 @@ public class RegistrationPage extends PageBase{
         waits(100);
         //insert specialty name
         insertTextIntoElement(specialtySearch,Specialty.getName());
+        waits(200);
         new WebDriverWait(driver, Duration.ofSeconds(20)).until(ExpectedConditions.visibilityOf(mainSpecialtyList));
 
         // re-declare mainSpecialtyList to choose the inserted specialty after the list has changed by inserting specialty name
