@@ -1,5 +1,6 @@
 package Pages;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -25,6 +26,12 @@ public class LoginPage extends PageBase {
     @FindBy (xpath = "/html/body/app-root/div/app-auth/div/div[2]/app-login/div/form/button")
     WebElement loginButton;
 
+    @FindBy (xpath = "/html/body/app-root/div/app-auth/div/div[2]/app-login/div/form/span")
+    public WebElement ValidationMessage;
+
+    @FindBy (id = "togglePasswordInput")
+    WebElement EyeIcon;
+
     public void openRegistrationPage (){
         clickOnElement(registerNow);
     }
@@ -38,5 +45,13 @@ public class LoginPage extends PageBase {
       clickOnElement(loginButton);
     }
 
+    public String getValidationMSG (){
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(30));
+        return ValidationMessage.getText();
+    }
+
+    public void viewPassword(){
+        clickOnElement(EyeIcon);
+    }
 
 }
