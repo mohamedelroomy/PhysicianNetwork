@@ -100,6 +100,6 @@ public enum Specialties {
         Random random = new Random();
         int randomIndex =random.ints(0,length).findFirst().getAsInt();
         return Specialties.values()[randomIndex];
-    };
+    }
 
 }
