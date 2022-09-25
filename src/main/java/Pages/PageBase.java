@@ -63,7 +63,6 @@ public class PageBase {
             System.out.println(e);
         }
     }
-
     public void scroll(int coordinate)
     {
         String coordinates = "window.scrollBy(0,"+ Integer.toString(coordinate) +")";
