@@ -4,4 +4,3 @@ public enum Gender {
     male,
     female,
 }
-// alooo
