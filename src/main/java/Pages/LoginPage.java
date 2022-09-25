@@ -11,7 +11,7 @@ public class LoginPage extends PageBase {
     }
     @FindBy (css = "a[routerlink='/Registration']")
     WebElement registerNow;
-
+//hiiiiiii roomy
     public void openRegistrationPage (){
         clickOnElement(registerNow);
     }
