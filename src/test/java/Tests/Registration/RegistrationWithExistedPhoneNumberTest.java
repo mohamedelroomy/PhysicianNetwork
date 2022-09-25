@@ -6,13 +6,17 @@ import Enums.Specialties;
 import Pages.LoginPage;
 import Pages.RegistrationPage;
 import Tests.TestBase;
+import org.testng.Assert;
 import org.testng.annotations.Test;
+
 import static Enums.Country.getRandomCountry;
 
-public class RegistrationTest extends TestBase {
+public class RegistrationWithExistedPhoneNumberTest extends TestBase {
     Country country = getRandomCountry();
     LoginPage login;
     RegistrationPage SignUp;
+    private String phoneNumber = "1010133512";
+    private String ToasterMessage = "Email or Mobile Phone already exists";
 
     @Test
     public void userCanRegisterSuccessfully ()   {
@@ -20,9 +24,9 @@ public class RegistrationTest extends TestBase {
         SignUp = new RegistrationPage(driver);
         login.openRegistrationPage();
         SignUp.completeUserInfo("mohamed","elroomy", Specialties.getRandomSpecialty(),
-                country,country.generatePhoneNumber(), generateEmail(),
-                generatePassword(), Gender.male);
+                country,phoneNumber, SignUp.generateEmail(),
+                SignUp.generatePassword(), Gender.male);
         SignUp.submit();
+        Assert.assertTrue(SignUp.getToasterMSG().contains(ToasterMessage));
     }
-
 }
