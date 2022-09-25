@@ -4,8 +4,9 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 import org.apache.commons.lang3.RandomStringUtils;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.ITestResult;
+import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeTest;
-
 import java.util.Random;
 
 
@@ -48,7 +49,16 @@ public class TestBase {
         return saltStr + "@gmail.com";
     }
 
-
+    @AfterMethod
+    public void screenshotOnFailure(ITestResult result)
+    {
+        if (result.getStatus() == ITestResult.FAILURE)
+        {
+            System.out.println("Failed!");
+            System.out.println("Taking Screenshot....");
+            Utilities.Helper.captureScreenshot(driver, result.getName());
+        }
+    }
 
 
 
