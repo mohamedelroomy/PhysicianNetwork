@@ -78,7 +78,7 @@ public class RegistrationPage extends PageBase{
 
     public void selectMainSpecialty(Specialties Specialty)  {
         new WebDriverWait(driver, Duration.ofSeconds(20)).until(ExpectedConditions.visibilityOf(mainSpecialtyList));
-        waits(500);
+        waits(100);
         //insert specialty name
         insertTextIntoElement(specialtySearch,Specialty.getName());
         new WebDriverWait(driver, Duration.ofSeconds(20)).until(ExpectedConditions.visibilityOf(mainSpecialtyList));
