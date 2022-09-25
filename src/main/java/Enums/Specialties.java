@@ -42,7 +42,54 @@ public enum Specialties {
         }
         public String getID (){
             return id;
-        }};
+        }},
+    Endocrinology{
+        final String id = "4";
+        final String name ="Endocrinology";
+
+        public String getName() {
+            return name;
+        }
+        public String getID (){
+            return id;
+        }},
+    Nephrology{
+        final String id = "5";
+        final String name ="Nephrology";
+
+        public String getName() {
+            return name;
+        }
+        public String getID (){
+            return id;
+        }},
+    Gastroenterology {
+        final String id = "6";
+        final String name ="Gastroenterology";
+
+        public String getName() {
+            return name;
+        }
+        public String getID (){
+            return id;
+        }},
+    Rheumatology {
+        final String id = "7";
+        final String name ="Rheumatology";
+
+        public String getName() {return name;}
+        public String getID (){
+            return id;
+        }},
+    GeriatricMedicine{ final String id = "8";
+        final String name ="Geriatric medicine";
+
+        public String getName() {return name;}
+        public String getID (){
+            return id;
+        }
+    }
+    ;
 
     public abstract String getName ();
     public abstract String getID();
@@ -53,6 +100,6 @@ public enum Specialties {
         Random random = new Random();
         int randomIndex =random.ints(0,length).findFirst().getAsInt();
         return Specialties.values()[randomIndex];
-    };
+    }
 
 }
