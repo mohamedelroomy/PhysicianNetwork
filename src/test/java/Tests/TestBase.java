@@ -25,30 +25,6 @@ public class TestBase {
     }
 
 
-    public static String generatePassword() {
-
-        String characters = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz!@#$%&()";
-        String pwd = RandomStringUtils.random( 9, characters );
-        // It will generate 6 digit random Number.
-        // from 0 to 99999999
-        Random rnd = new Random();
-        int number = rnd.nextInt(99999999);
-        String pass = String.format("%06d", number) + pwd;
-        return pass;
-    }
-
-    public static String generateEmail(){
-        String chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890";
-        StringBuilder salt = new StringBuilder();
-        Random rnd = new Random();
-        while (salt.length() < 10) { // length of the random string.
-            int index = (int) (rnd.nextFloat() * chars.length());
-            salt.append(chars.charAt(index));
-        }
-        String saltStr = salt.toString();
-        return saltStr + "@gmail.com";
-    }
-
     @AfterMethod
     public void screenshotOnFailure(ITestResult result)
     {
