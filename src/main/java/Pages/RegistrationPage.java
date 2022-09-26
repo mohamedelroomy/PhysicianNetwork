@@ -86,7 +86,7 @@ public class RegistrationPage extends PageBase{
         waits(100);
         //insert specialty name
         insertTextIntoElement(specialtySearch,Specialty.getName());
-        waits(500);
+        waits(200);
         new WebDriverWait(driver, Duration.ofSeconds(20)).until(ExpectedConditions.visibilityOf(mainSpecialtyList));
 
         // re-declare mainSpecialtyList to choose the inserted specialty after the list has changed by inserting specialty name
@@ -121,7 +121,7 @@ public class RegistrationPage extends PageBase{
     public void selectCountry (Country country) {
         List<WebElement> CountryOptions = countryCodeList.findElements(By.tagName("li"));
         new WebDriverWait(driver, Duration.ofSeconds(20)).until(ExpectedConditions.visibilityOfAllElements(CountryOptions));
-        waits(500);
+        waits(200);
         for (WebElement e : CountryOptions) {
             if (e.getText().equalsIgnoreCase(country.getCode())) {
                 clickOnElement(e);
