@@ -26,6 +26,7 @@ public class RegistrationSuccessfullyTest extends TestBase {
                 country,country.generatePhoneNumber(), SignUp.generateEmail(),
                 SignUp.generatePassword(), Gender.male);
         SignUp.submit();
+        System.out.println(SignUp.getToasterMSG());
         Assert.assertTrue(SignUp.getToasterMSG().contains(ToasterMessage));
     }
 
