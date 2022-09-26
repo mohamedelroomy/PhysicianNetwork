@@ -27,7 +27,7 @@ public class RegistrationWithExistedPhoneNumberTest extends TestBase {
                 country,phoneNumber, SignUp.generateEmail(),
                 SignUp.generatePassword(), Gender.male);
         SignUp.submit();
-        System.out.println(SignUp.getToasterMSG());
+        System.out.println("the Message is"+SignUp.getToasterMSG());
         Assert.assertTrue(SignUp.getToasterMSG().contains(ToasterMessage));
     }
 }

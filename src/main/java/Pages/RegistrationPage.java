@@ -8,6 +8,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.ui.ExpectedCondition;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import java.time.Duration;
@@ -135,6 +136,7 @@ public class RegistrationPage extends PageBase{
 
     public String getToasterMSG (){
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(60000));
+        waits(500);
         return toasterMessage.getText();
     }
 
@@ -142,7 +144,7 @@ public class RegistrationPage extends PageBase{
 
         String characters = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz!@#$%&()";
         String pwd = RandomStringUtils.random( 9, characters );
-        // It will generate 6 digit random Number.
+        // It will generate 9 digit random Number.
         // from 0 to 99999999
         Random rnd = new Random();
         int number = rnd.nextInt(99999999);
