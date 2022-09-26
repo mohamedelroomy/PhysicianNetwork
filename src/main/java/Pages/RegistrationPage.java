@@ -3,6 +3,7 @@ package Pages;
 import Enums.Country;
 import Enums.Gender;
 import Enums.Specialties;
+import org.apache.commons.lang3.RandomStringUtils;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -11,6 +12,7 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import java.time.Duration;
 import java.util.List;
+import java.util.Random;
 
 
 public class RegistrationPage extends PageBase{
@@ -57,6 +59,9 @@ public class RegistrationPage extends PageBase{
 
     @FindBy (xpath = "//button[@type = 'submit']")
     WebElement createAccountBTN;
+
+    @FindBy (xpath = "/html/body/ejs-toast/div/div/div[2]")
+    WebElement toasterMessage;
 
 
 
@@ -116,7 +121,7 @@ public class RegistrationPage extends PageBase{
     public void selectCountry (Country country) {
         List<WebElement> CountryOptions = countryCodeList.findElements(By.tagName("li"));
         new WebDriverWait(driver, Duration.ofSeconds(20)).until(ExpectedConditions.visibilityOfAllElements(CountryOptions));
-        waits(500);
+        waits(200);
         for (WebElement e : CountryOptions) {
             if (e.getText().equalsIgnoreCase(country.getCode())) {
                 clickOnElement(e);
@@ -126,5 +131,34 @@ public class RegistrationPage extends PageBase{
 
     public void submit (){
         clickOnElement(createAccountBTN);
+    }
+
+    public String getToasterMSG (){
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(60000));
+        return toasterMessage.getText();
+    }
+
+    public String generatePassword() {
+
+        String characters = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz!@#$%&()";
+        String pwd = RandomStringUtils.random( 9, characters );
+        // It will generate 6 digit random Number.
+        // from 0 to 99999999
+        Random rnd = new Random();
+        int number = rnd.nextInt(99999999);
+        String pass = String.format("%06d", number) + pwd;
+        return pass;
+    }
+
+    public String generateEmail(){
+        String chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890";
+        StringBuilder salt = new StringBuilder();
+        Random rnd = new Random();
+        while (salt.length() < 10) { // length of the random string.
+            int index = (int) (rnd.nextFloat() * chars.length());
+            salt.append(chars.charAt(index));
+        }
+        String saltStr = salt.toString();
+        return saltStr + "@gmail.com";
     }
 }
