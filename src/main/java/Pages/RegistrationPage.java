@@ -144,7 +144,7 @@ public class RegistrationPage extends PageBase{
 
         String characters = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz!@#$%&()";
         String pwd = RandomStringUtils.random( 9, characters );
-        // It will generate 6 digit random Number.
+        // It will generate 9 digit random Number.
         // from 0 to 99999999
         Random rnd = new Random();
         int number = rnd.nextInt(99999999);
