@@ -29,5 +29,6 @@ public class RegistrationWithExistedEmailTest extends TestBase {
         SignUp.submit();
         System.out.println("the Message is "+SignUp.getToasterMSG());
         Assert.assertTrue(SignUp.getToasterMSG().contains(ToasterMessage));
+        driver.navigate().refresh();
     }
 }

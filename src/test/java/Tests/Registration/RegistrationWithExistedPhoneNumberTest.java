@@ -9,10 +9,11 @@ import Tests.TestBase;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
+import static Enums.Country.Egypt;
 import static Enums.Country.getRandomCountry;
 
 public class RegistrationWithExistedPhoneNumberTest extends TestBase {
-    Country country = getRandomCountry();
+    Country country = Egypt;
     LoginPage login;
     RegistrationPage SignUp;
     private String phoneNumber = "1010133512";
@@ -22,12 +23,13 @@ public class RegistrationWithExistedPhoneNumberTest extends TestBase {
     public void userCanRegisterSuccessfully ()   {
         login = new LoginPage(driver);
         SignUp = new RegistrationPage(driver);
-        login.openRegistrationPage();
+//        login.openRegistrationPage();
         SignUp.completeUserInfo("mohamed","elroomy", Specialties.getRandomSpecialty(),
                 country,phoneNumber, SignUp.generateEmail(),
                 SignUp.generatePassword(), Gender.male);
         SignUp.submit();
         System.out.println("the Message is "+SignUp.getToasterMSG());
         Assert.assertTrue(SignUp.getToasterMSG().contains(ToasterMessage));
+        driver.navigate().refresh();
     }
 }
