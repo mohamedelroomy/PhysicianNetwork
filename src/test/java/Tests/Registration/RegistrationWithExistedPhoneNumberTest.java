@@ -8,9 +8,7 @@ import Pages.RegistrationPage;
 import Tests.TestBase;
 import org.testng.Assert;
 import org.testng.annotations.Test;
-
 import static Enums.Country.Egypt;
-import static Enums.Country.getRandomCountry;
 
 public class RegistrationWithExistedPhoneNumberTest extends TestBase {
     Country country = Egypt;
