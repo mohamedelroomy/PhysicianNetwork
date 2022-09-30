@@ -5,11 +5,10 @@
         <classes>
             <class name="Tests.Login.LoginWithInvalidEmailTest"/>
             <class name="Tests.Login.LoginWithInvalidPassTest" />
+            <class name="Tests.Registration.RegistrationWithExistedEmailTest" />
+            <class name="Tests.Registration.RegistrationWithExistedPhoneNumberTest"/>
+            <class name="Tests.Registration.RegistrationSuccessfullyTest"/>
             <class name="Tests.Login.LoginSuccessfullyTest"/>
-
-            <!--         <class name="Tests.Registration.RegistrationSuccessfullyTest"/> -->
-<!--            <class name="Tests.Registration.RegistrationWithExistedEmailTest" />-->
-<!--            <class name="Tests.Registration.RegistrationWithExistedPhoneNumberTest"/>-->
         </classes>
     </test>
 </suite>

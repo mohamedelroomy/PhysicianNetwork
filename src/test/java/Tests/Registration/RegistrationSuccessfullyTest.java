@@ -21,7 +21,7 @@ public class RegistrationSuccessfullyTest extends TestBase {
     public void userCanRegisterSuccessfully ()   {
         login = new LoginPage(driver);
         SignUp = new RegistrationPage(driver);
-        login.openRegistrationPage();
+//        login.openRegistrationPage();
         SignUp.completeUserInfo("mohamed","elroomy", Specialties.getRandomSpecialty(),
                 country,country.generatePhoneNumber(), SignUp.generateEmail(),
                 SignUp.generatePassword(), Gender.male);

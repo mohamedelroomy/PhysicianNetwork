@@ -3,20 +3,27 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [All Test Suite]">
   <test thread-count="5" name="F:/PhysicianNetwork/PhysicianNetwork(failed)">
     <classes>
-      <class name="Tests.Login.LoginWithInvalidPassTest">
+      <class name="Tests.Registration.RegistrationSuccessfullyTest">
         <methods>
-          <include name="userCanNotLoginWithInvalidEmail"/>
+          <include name="userCanRegisterSuccessfully"/>
           <include name="start"/>
           <include name="screenshotOnFailure"/>
         </methods>
-      </class> <!-- Tests.Login.LoginWithInvalidPassTest -->
-      <class name="Tests.Login.LoginWithInvalidEmailTest">
+      </class> <!-- Tests.Registration.RegistrationSuccessfullyTest -->
+      <class name="Tests.Registration.RegistrationWithExistedPhoneNumberTest">
         <methods>
           <include name="start"/>
           <include name="screenshotOnFailure"/>
-          <include name="userCanNotLoginWithInvalidEmail"/>
+          <include name="userCanRegisterSuccessfully"/>
         </methods>
-      </class> <!-- Tests.Login.LoginWithInvalidEmailTest -->
+      </class> <!-- Tests.Registration.RegistrationWithExistedPhoneNumberTest -->
+      <class name="Tests.Login.LoginSuccessfullyTest">
+        <methods>
+          <include name="userCanLoginWithValidEmailAndPassword"/>
+          <include name="start"/>
+          <include name="screenshotOnFailure"/>
+        </methods>
+      </class> <!-- Tests.Login.LoginSuccessfullyTest -->
     </classes>
   </test> <!-- F:/PhysicianNetwork/PhysicianNetwork(failed) -->
 </suite> <!-- Failed suite [All Test Suite] -->
