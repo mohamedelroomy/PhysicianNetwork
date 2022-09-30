@@ -1,22 +1,21 @@
 package Tests;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
-import org.apache.commons.lang3.RandomStringUtils;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.ITestResult;
-import org.testng.annotations.AfterMethod;
-import org.testng.annotations.BeforeTest;
-import java.util.Random;
+import org.testng.annotations.*;
+
+
 
 
 public class TestBase {
-    protected WebDriver driver;
+    public static WebDriver driver;
     private String Url = "http://18.197.85.177:5104/Login";
 
 
 
-    @BeforeTest
+    @BeforeSuite
     public void start (){
         WebDriverManager.chromedriver().setup();
         driver = new ChromeDriver();
@@ -38,8 +37,8 @@ public class TestBase {
 
 
 
-
-//    @AfterTest
+//
+//    @AfterSuite
 //    public void exit (){
 //        driver.quit();
 //    }

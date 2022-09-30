@@ -14,10 +14,14 @@ public class LoginWithInvalidEmailTest extends TestBase {
 
     @Test
     public void userCanNotLoginWithInvalidEmail(){
+        if (driver !=null){
+            System.out.println("driver is not null");
+        }
         login = new LoginPage(driver);
         login.completeLoginInput(email,password);
         login.login();
         login.viewPassword();
         Assert.assertTrue(login.getValidationMSG().contains(ValidationMSG));
+        driver.navigate().refresh();
     }
 }
