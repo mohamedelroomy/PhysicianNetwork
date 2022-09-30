@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="1" total="3" passed="2">
+  <reporter-output>
+  </reporter-output>
+  <suite name="All Test Suite" duration-ms="2046" started-at="2022-09-30T13:27:31 EET" finished-at="2022-09-30T13:27:33 EET">
+    <groups>
+    </groups>
+    <test name="F:/PhysicianNetwork/PhysicianNetwork" duration-ms="2046" started-at="2022-09-30T13:27:31 EET" finished-at="2022-09-30T13:27:33 EET">
+      <class name="Tests.Login.LoginWithInvalidEmailTest">
+        <test-method status="PASS" signature="start()[pri:0, instance:Tests.Login.LoginWithInvalidEmailTest@2758fe70]" name="start" is-config="true" duration-ms="5095" started-at="2022-09-30T13:27:26 EET" finished-at="2022-09-30T13:27:31 EET">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- start -->
+        <test-method status="PASS" signature="userCanNotLoginWithInvalidEmail()[pri:0, instance:Tests.Login.LoginWithInvalidEmailTest@2758fe70]" name="userCanNotLoginWithInvalidEmail" duration-ms="1132" started-at="2022-09-30T13:27:31 EET" finished-at="2022-09-30T13:27:32 EET">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- userCanNotLoginWithInvalidEmail -->
+        <test-method status="PASS" signature="screenshotOnFailure(org.testng.ITestResult)[pri:0, instance:Tests.Login.LoginWithInvalidEmailTest@2758fe70]" name="screenshotOnFailure" is-config="true" duration-ms="4" started-at="2022-09-30T13:27:32 EET" finished-at="2022-09-30T13:27:32 EET">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=userCanNotLoginWithInvalidEmail status=SUCCESS method=LoginWithInvalidEmailTest.userCanNotLoginWithInvalidEmail()[pri:0, instance:Tests.Login.LoginWithInvalidEmailTest@2758fe70] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- screenshotOnFailure -->
+      </class> <!-- Tests.Login.LoginWithInvalidEmailTest -->
+      <class name="Tests.Login.LoginWithInvalidPassTest">
+        <test-method status="PASS" signature="userCanNotLoginWithInvalidEmail()[pri:0, instance:Tests.Login.LoginWithInvalidPassTest@6e6c3152]" name="userCanNotLoginWithInvalidEmail" duration-ms="826" started-at="2022-09-30T13:27:32 EET" finished-at="2022-09-30T13:27:33 EET">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- userCanNotLoginWithInvalidEmail -->
+        <test-method status="PASS" signature="screenshotOnFailure(org.testng.ITestResult)[pri:0, instance:Tests.Login.LoginWithInvalidPassTest@6e6c3152]" name="screenshotOnFailure" is-config="true" duration-ms="1" started-at="2022-09-30T13:27:33 EET" finished-at="2022-09-30T13:27:33 EET">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=userCanNotLoginWithInvalidEmail status=SUCCESS method=LoginWithInvalidPassTest.userCanNotLoginWithInvalidEmail()[pri:0, instance:Tests.Login.LoginWithInvalidPassTest@6e6c3152] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- screenshotOnFailure -->
+      </class> <!-- Tests.Login.LoginWithInvalidPassTest -->
+    </test> <!-- F:/PhysicianNetwork/PhysicianNetwork -->
+  </suite> <!-- All Test Suite -->
+</testng-results>

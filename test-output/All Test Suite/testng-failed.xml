@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [All Test Suite]">
+  <test thread-count="5" name="F:/PhysicianNetwork/PhysicianNetwork(failed)">
+    <classes>
+      <class name="Tests.Login.LoginWithInvalidPassTest">
+        <methods>
+          <include name="userCanNotLoginWithInvalidEmail"/>
+          <include name="start"/>
+          <include name="screenshotOnFailure"/>
+        </methods>
+      </class> <!-- Tests.Login.LoginWithInvalidPassTest -->
+      <class name="Tests.Login.LoginWithInvalidEmailTest">
+        <methods>
+          <include name="start"/>
+          <include name="screenshotOnFailure"/>
+          <include name="userCanNotLoginWithInvalidEmail"/>
+        </methods>
+      </class> <!-- Tests.Login.LoginWithInvalidEmailTest -->
+    </classes>
+  </test> <!-- F:/PhysicianNetwork/PhysicianNetwork(failed) -->
+</suite> <!-- Failed suite [All Test Suite] -->

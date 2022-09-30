@@ -10,7 +10,7 @@ import org.openqa.selenium.support.ui.Select;
 
 public class PageBase {
 
-    protected static WebDriver driver;
+    protected WebDriver driver;
     protected Select select;
     protected Actions actions;
     public PageBase(WebDriver driver) {

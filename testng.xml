@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <test verbose="2" preserve-order="false" name="F:/PhysicianNetwork/PhysicianNetwork">
+        <classes>
+            <class name="Tests.Login.LoginWithInvalidEmailTest"/>
+            <class name="Tests.Login.LoginWithInvalidPassTest" />
+            <class name="Tests.Login.LoginSuccessfullyTest"/>
+
+            <!--         <class name="Tests.Registration.RegistrationSuccessfullyTest"/> -->
+<!--            <class name="Tests.Registration.RegistrationWithExistedEmailTest" />-->
+<!--            <class name="Tests.Registration.RegistrationWithExistedPhoneNumberTest"/>-->
+        </classes>
+    </test>
+</suite>
