@@ -6,12 +6,14 @@
       <class name="Tests.Registration.RegistrationSuccessfullyTest">
         <methods>
           <include name="userCanRegisterSuccessfully"/>
+          <include name="exit"/>
           <include name="start"/>
           <include name="screenshotOnFailure"/>
         </methods>
       </class> <!-- Tests.Registration.RegistrationSuccessfullyTest -->
       <class name="Tests.Registration.RegistrationWithExistedPhoneNumberTest">
         <methods>
+          <include name="exit"/>
           <include name="start"/>
           <include name="screenshotOnFailure"/>
           <include name="userCanRegisterSuccessfully"/>
@@ -19,6 +21,7 @@
       </class> <!-- Tests.Registration.RegistrationWithExistedPhoneNumberTest -->
       <class name="Tests.Login.LoginSuccessfullyTest">
         <methods>
+          <include name="exit"/>
           <include name="userCanLoginWithValidEmailAndPassword"/>
           <include name="start"/>
           <include name="screenshotOnFailure"/>
