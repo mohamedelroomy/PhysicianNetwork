@@ -97,9 +97,10 @@ public class RegistrationPage extends PageBase{
         //choose the inserted specialty
         List <WebElement> SpecialtiesOptions = mainSpecialtyList.findElements(By.tagName("li"));
         for (WebElement e: SpecialtiesOptions) {
-            if (e.getText().contains(Specialty.getName())){
+            if (e.getText().equalsIgnoreCase(Specialty.getName())){
                 clickOnElement(e);
             }
+            else clickOnEnter();
         }
     }
 
