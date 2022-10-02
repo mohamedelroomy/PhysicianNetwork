@@ -11,8 +11,6 @@ import org.testng.annotations.*;
 
 public class TestBase {
     public static WebDriver driver;
-    private String Url = "http://18.197.85.177:5104/Login";
-
 
 
     @BeforeSuite
@@ -20,7 +18,8 @@ public class TestBase {
         WebDriverManager.chromedriver().setup();
         driver = new ChromeDriver();
         driver.manage().window().maximize();
-        driver.get(Url);
+        String url = "http://18.197.85.177:5104/Login";
+        driver.get(url);
     }
 
 
@@ -37,11 +36,11 @@ public class TestBase {
 
 
 
-//
-//    @AfterSuite
-//    public void exit (){
-//        driver.quit();
-//    }
+
+    @AfterSuite
+    public void exit (){
+        driver.quit();
+    }
 
 
 }
