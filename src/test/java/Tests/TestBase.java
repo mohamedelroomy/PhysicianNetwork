@@ -10,7 +10,7 @@ import org.testng.annotations.*;
 
 
 public class TestBase {
-    public static WebDriver driver;
+    protected static WebDriver driver;
 
 
     @BeforeSuite

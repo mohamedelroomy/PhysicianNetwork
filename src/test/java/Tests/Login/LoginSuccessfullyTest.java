@@ -16,7 +16,10 @@ public class LoginSuccessfullyTest extends TestBase {
         login = new LoginPage(driver);
         Email = RegistrationSuccessfullyTest.Email;
         Password = RegistrationSuccessfullyTest.Password;
-        login.completeLoginInput(Email,Password);
+        if (Email == null || Password == null ){
+            login.completeLoginInput("mohamedelroo@gmail.com","2571999m");
+        }
+        else login.completeLoginInput(Email,Password);
         login.login();
     }
 }
