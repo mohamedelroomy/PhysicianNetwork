@@ -22,6 +22,6 @@ public class LoginSuccessfullyTest extends TestBase {
         }
         else login.completeLoginInput(Email,Password);
         Assert.assertTrue(!login.isExist(login.ValidationMessage));
-       // login.login();
+        login.login();
     }
 }
