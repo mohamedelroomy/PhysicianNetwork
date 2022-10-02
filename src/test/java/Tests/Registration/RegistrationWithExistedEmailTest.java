@@ -23,11 +23,18 @@ public class RegistrationWithExistedEmailTest extends TestBase {
         login = new LoginPage(driver);
         SignUp = new RegistrationPage(driver);
         login.openRegistrationPage();
-        SignUp.completeUserInfo("mohamed","elroomy", Specialties.getRandomSpecialty(),
-                country,country.generatePhoneNumber(), email,
-                SignUp.generatePassword(), Gender.male);
+        SignUp.completeUserInfo(
+                "mohamed",
+                "elroomy",
+                Specialties.getRandomSpecialty(),
+                country,
+                country.generatePhoneNumber(),
+                email,
+                SignUp.generatePassword(),
+                Gender.male);
         SignUp.submit();
-        System.out.println("the Message is"+SignUp.getToasterMSG());
+        System.out.println("the Message is "+SignUp.getToasterMSG());
         Assert.assertTrue(SignUp.getToasterMSG().contains(ToasterMessage));
+        driver.navigate().refresh();
     }
 }

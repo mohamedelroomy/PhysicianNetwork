@@ -19,5 +19,6 @@ public class LoginWithInvalidEmailTest extends TestBase {
         login.login();
         login.viewPassword();
         Assert.assertTrue(login.getValidationMSG().contains(ValidationMSG));
+        driver.navigate().refresh();
     }
 }

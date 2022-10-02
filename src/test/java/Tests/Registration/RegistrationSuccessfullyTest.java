@@ -14,6 +14,8 @@ public class RegistrationSuccessfullyTest extends TestBase {
     Country country = getRandomCountry();
     LoginPage login;
     RegistrationPage SignUp;
+    public static String Email;
+    public static String Password;
     private String ToasterMessage = "Success";
 
 
@@ -21,12 +23,21 @@ public class RegistrationSuccessfullyTest extends TestBase {
     public void userCanRegisterSuccessfully ()   {
         login = new LoginPage(driver);
         SignUp = new RegistrationPage(driver);
-        login.openRegistrationPage();
-        SignUp.completeUserInfo("mohamed","elroomy", Specialties.getRandomSpecialty(),
-                country,country.generatePhoneNumber(), SignUp.generateEmail(),
-                SignUp.generatePassword(), Gender.male);
+        Email = SignUp.generateEmail();
+        Password = SignUp.generatePassword();
+//        login.openRegistrationPage();
+
+        SignUp.completeUserInfo(
+                "mohamed",
+                "elroomy",
+                Specialties.getRandomSpecialty(),
+                country,
+                country.generatePhoneNumber(),
+                Email,
+                Password,
+                Gender.male);
         SignUp.submit();
-        System.out.println("the Message is"+SignUp.getToasterMSG());
+        System.out.println("the Message is "+SignUp.getToasterMSG());
         Assert.assertTrue(SignUp.getToasterMSG().contains(ToasterMessage));
     }
 
