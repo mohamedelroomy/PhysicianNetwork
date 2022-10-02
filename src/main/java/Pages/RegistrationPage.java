@@ -73,6 +73,7 @@ public class RegistrationPage extends PageBase{
         insertTextIntoElement(lastName, LastName);
         clickOnElement(mainSpecialtyDDL);
         selectMainSpecialty(Specialty);
+        waits(300);
         clickOnElement(countryCodeDDL);
         selectCountry(country);
         insertTextIntoElement(mobileNumberInput,PhoneNumber);
@@ -96,7 +97,7 @@ public class RegistrationPage extends PageBase{
         //choose the inserted specialty
         List <WebElement> SpecialtiesOptions = mainSpecialtyList.findElements(By.tagName("li"));
         for (WebElement e: SpecialtiesOptions) {
-            if (e.getText().equalsIgnoreCase(Specialty.getName())){
+            if (e.getText().contains(Specialty.getName())){
                 clickOnElement(e);
             }
         }
