@@ -21,7 +21,7 @@ public class LoginSuccessfullyTest extends TestBase {
             login.completeLoginInput("mohamedelroo@gmail.com","2571999m");
         }
         else login.completeLoginInput(Email,Password);
-        Assert.assertTrue(!login.isExist(login.ValidationMessage));
+        Assert.assertFalse(login.isExist(login.ValidationMessage));
         login.login();
     }
 }
