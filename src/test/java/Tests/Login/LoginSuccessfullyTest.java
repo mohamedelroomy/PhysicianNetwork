@@ -3,6 +3,7 @@ package Tests.Login;
 import Pages.LoginPage;
 import Tests.Registration.RegistrationSuccessfullyTest;
 import Tests.TestBase;
+import org.testng.Assert;
 import org.testng.annotations.Test;
 
 
@@ -20,6 +21,7 @@ public class LoginSuccessfullyTest extends TestBase {
             login.completeLoginInput("mohamedelroo@gmail.com","2571999m");
         }
         else login.completeLoginInput(Email,Password);
-        login.login();
+        Assert.assertTrue(!login.isExist(login.ValidationMessage));
+       // login.login();
     }
 }
