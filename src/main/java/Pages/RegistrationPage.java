@@ -73,7 +73,6 @@ public class RegistrationPage extends PageBase{
         insertTextIntoElement(lastName, LastName);
         clickOnElement(mainSpecialtyDDL);
         selectMainSpecialty(Specialty);
-        waits(300);
         clickOnElement(countryCodeDDL);
         selectCountry(country);
         insertTextIntoElement(mobileNumberInput,PhoneNumber);
