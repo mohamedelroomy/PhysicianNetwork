@@ -38,9 +38,7 @@ public class TestBase {
 
 
     @AfterSuite
-    public void exit (){
-        driver.quit();
-    }
+    public void exit (){driver.quit();}
 
 
 }
