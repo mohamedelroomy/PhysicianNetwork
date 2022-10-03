@@ -66,15 +66,7 @@ public class PageBase {
         JavascriptExecutor js = (JavascriptExecutor) driver;
         js.executeScript(coordinates, "");
     }
-    public boolean isExist (WebElement element){
-        try {
-            element.getTagName();
-            return true;
-        }
-        catch (NoSuchElementException e){
-            return false;
-        }
-    }
+
 
 
 
