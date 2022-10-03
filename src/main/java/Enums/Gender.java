@@ -40,7 +40,7 @@ public enum Gender {
         int randomIndex =random.ints(0,length).findFirst().getAsInt();
         return Gender.values()[randomIndex];
     }
-};
+}
 
 
 
