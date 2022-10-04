@@ -3,6 +3,7 @@ package Tests.Login;
 import Pages.LoginPage;
 import Tests.Registration.RegistrationSuccessfullyTest;
 import Tests.TestBase;
+import org.openqa.selenium.net.UrlChecker;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
@@ -13,7 +14,7 @@ public class LoginSuccessfullyTest extends TestBase {
     private String Email;
     private String Password;
     @Test
-    public void userCanLoginWithValidEmailAndPassword (){
+    public void userCanLoginWithValidEmailAndPassword  ()  {
         login = new LoginPage(driver);
         Email = RegistrationSuccessfullyTest.Email;
         Password = RegistrationSuccessfullyTest.Password;
