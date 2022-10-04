@@ -2,20 +2,20 @@
 <testng-results skipped="0" failed="0" ignored="10" total="16" passed="6">
   <reporter-output>
   </reporter-output>
-  <suite name="All Test Suite" duration-ms="9843" started-at="2022-10-03T19:44:56 EET" finished-at="2022-10-03T19:45:05 EET">
+  <suite name="All Test Suite" duration-ms="15665" started-at="2022-10-04T23:09:20 EET" finished-at="2022-10-04T23:09:36 EET">
     <groups>
     </groups>
-    <test name="F:/PhysicianNetwork/PhysicianNetwork" duration-ms="9843" started-at="2022-10-03T19:44:56 EET" finished-at="2022-10-03T19:45:05 EET">
+    <test name="F:/PhysicianNetwork/PhysicianNetwork" duration-ms="15665" started-at="2022-10-04T23:09:20 EET" finished-at="2022-10-04T23:09:36 EET">
       <class name="Tests.Login.LoginWithInvalidEmailTest">
-        <test-method status="PASS" signature="start()[pri:0, instance:Tests.Login.LoginWithInvalidEmailTest@72b6cbcc]" name="start" is-config="true" duration-ms="3945" started-at="2022-10-03T19:44:52 EET" finished-at="2022-10-03T19:44:56 EET">
+        <test-method status="PASS" signature="start()[pri:0, instance:Tests.Login.LoginWithInvalidEmailTest@72b6cbcc]" name="start" is-config="true" duration-ms="8528" started-at="2022-10-04T23:09:12 EET" finished-at="2022-10-04T23:09:20 EET">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- start -->
-        <test-method status="PASS" signature="userCanNotLoginWithInvalidEmail()[pri:0, instance:Tests.Login.LoginWithInvalidEmailTest@72b6cbcc]" name="userCanNotLoginWithInvalidEmail" duration-ms="602" started-at="2022-10-03T19:44:56 EET" finished-at="2022-10-03T19:44:56 EET">
+        <test-method status="PASS" signature="userCanNotLoginWithInvalidEmail()[pri:0, instance:Tests.Login.LoginWithInvalidEmailTest@72b6cbcc]" name="userCanNotLoginWithInvalidEmail" duration-ms="975" started-at="2022-10-04T23:09:21 EET" finished-at="2022-10-04T23:09:21 EET">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- userCanNotLoginWithInvalidEmail -->
-        <test-method status="PASS" signature="screenshotOnFailure(org.testng.ITestResult)[pri:0, instance:Tests.Login.LoginWithInvalidEmailTest@72b6cbcc]" name="screenshotOnFailure" is-config="true" duration-ms="1" started-at="2022-10-03T19:44:56 EET" finished-at="2022-10-03T19:44:56 EET">
+        <test-method status="PASS" signature="screenshotOnFailure(org.testng.ITestResult)[pri:0, instance:Tests.Login.LoginWithInvalidEmailTest@72b6cbcc]" name="screenshotOnFailure" is-config="true" duration-ms="6" started-at="2022-10-04T23:09:22 EET" finished-at="2022-10-04T23:09:22 EET">
           <params>
             <param index="0">
               <value>
@@ -26,17 +26,17 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- screenshotOnFailure -->
-        <test-method status="PASS" signature="exit()[pri:0, instance:Tests.Login.LoginWithInvalidEmailTest@72b6cbcc]" name="exit" is-config="true" duration-ms="570" started-at="2022-10-03T19:45:06 EET" finished-at="2022-10-03T19:45:06 EET">
+        <test-method status="PASS" signature="exit()[pri:0, instance:Tests.Login.LoginWithInvalidEmailTest@72b6cbcc]" name="exit" is-config="true" duration-ms="693" started-at="2022-10-04T23:09:36 EET" finished-at="2022-10-04T23:09:37 EET">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- exit -->
       </class> <!-- Tests.Login.LoginWithInvalidEmailTest -->
       <class name="Tests.Registration.RegistrationWithExistedPhoneNumberTest">
-        <test-method status="PASS" signature="userCanRegisterSuccessfully()[pri:0, instance:Tests.Registration.RegistrationWithExistedPhoneNumberTest@2a17b7b6]" name="userCanRegisterSuccessfully" duration-ms="2796" started-at="2022-10-03T19:45:00 EET" finished-at="2022-10-03T19:45:03 EET">
+        <test-method status="PASS" signature="userCanRegisterSuccessfully()[pri:0, instance:Tests.Registration.RegistrationWithExistedPhoneNumberTest@2a17b7b6]" name="userCanRegisterSuccessfully" duration-ms="4075" started-at="2022-10-04T23:09:28 EET" finished-at="2022-10-04T23:09:32 EET">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- userCanRegisterSuccessfully -->
-        <test-method status="PASS" signature="screenshotOnFailure(org.testng.ITestResult)[pri:0, instance:Tests.Registration.RegistrationWithExistedPhoneNumberTest@2a17b7b6]" name="screenshotOnFailure" is-config="true" duration-ms="1" started-at="2022-10-03T19:45:03 EET" finished-at="2022-10-03T19:45:03 EET">
+        <test-method status="PASS" signature="screenshotOnFailure(org.testng.ITestResult)[pri:0, instance:Tests.Registration.RegistrationWithExistedPhoneNumberTest@2a17b7b6]" name="screenshotOnFailure" is-config="true" duration-ms="1" started-at="2022-10-04T23:09:32 EET" finished-at="2022-10-04T23:09:32 EET">
           <params>
             <param index="0">
               <value>
@@ -49,11 +49,11 @@
         </test-method> <!-- screenshotOnFailure -->
       </class> <!-- Tests.Registration.RegistrationWithExistedPhoneNumberTest -->
       <class name="Tests.Login.LoginWithInvalidPassTest">
-        <test-method status="PASS" signature="userCanNotLoginWithInvalidEmail()[pri:0, instance:Tests.Login.LoginWithInvalidPassTest@9660f4e]" name="userCanNotLoginWithInvalidEmail" duration-ms="356" started-at="2022-10-03T19:44:56 EET" finished-at="2022-10-03T19:44:57 EET">
+        <test-method status="PASS" signature="userCanNotLoginWithInvalidEmail()[pri:0, instance:Tests.Login.LoginWithInvalidPassTest@9660f4e]" name="userCanNotLoginWithInvalidEmail" duration-ms="642" started-at="2022-10-04T23:09:22 EET" finished-at="2022-10-04T23:09:22 EET">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- userCanNotLoginWithInvalidEmail -->
-        <test-method status="PASS" signature="screenshotOnFailure(org.testng.ITestResult)[pri:0, instance:Tests.Login.LoginWithInvalidPassTest@9660f4e]" name="screenshotOnFailure" is-config="true" duration-ms="0" started-at="2022-10-03T19:44:57 EET" finished-at="2022-10-03T19:44:57 EET">
+        <test-method status="PASS" signature="screenshotOnFailure(org.testng.ITestResult)[pri:0, instance:Tests.Login.LoginWithInvalidPassTest@9660f4e]" name="screenshotOnFailure" is-config="true" duration-ms="1" started-at="2022-10-04T23:09:22 EET" finished-at="2022-10-04T23:09:22 EET">
           <params>
             <param index="0">
               <value>
@@ -66,11 +66,11 @@
         </test-method> <!-- screenshotOnFailure -->
       </class> <!-- Tests.Login.LoginWithInvalidPassTest -->
       <class name="Tests.Registration.RegistrationWithExistedEmailTest">
-        <test-method status="PASS" signature="userCanRegisterSuccessfully()[pri:0, instance:Tests.Registration.RegistrationWithExistedEmailTest@5d76b067]" name="userCanRegisterSuccessfully" duration-ms="3261" started-at="2022-10-03T19:44:57 EET" finished-at="2022-10-03T19:45:00 EET">
+        <test-method status="PASS" signature="userCanRegisterSuccessfully()[pri:0, instance:Tests.Registration.RegistrationWithExistedEmailTest@5d76b067]" name="userCanRegisterSuccessfully" duration-ms="5862" started-at="2022-10-04T23:09:22 EET" finished-at="2022-10-04T23:09:28 EET">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- userCanRegisterSuccessfully -->
-        <test-method status="PASS" signature="screenshotOnFailure(org.testng.ITestResult)[pri:0, instance:Tests.Registration.RegistrationWithExistedEmailTest@5d76b067]" name="screenshotOnFailure" is-config="true" duration-ms="0" started-at="2022-10-03T19:45:00 EET" finished-at="2022-10-03T19:45:00 EET">
+        <test-method status="PASS" signature="screenshotOnFailure(org.testng.ITestResult)[pri:0, instance:Tests.Registration.RegistrationWithExistedEmailTest@5d76b067]" name="screenshotOnFailure" is-config="true" duration-ms="0" started-at="2022-10-04T23:09:28 EET" finished-at="2022-10-04T23:09:28 EET">
           <params>
             <param index="0">
               <value>
@@ -83,11 +83,11 @@
         </test-method> <!-- screenshotOnFailure -->
       </class> <!-- Tests.Registration.RegistrationWithExistedEmailTest -->
       <class name="Tests.Registration.RegistrationSuccessfullyTest">
-        <test-method status="PASS" signature="userCanRegisterSuccessfully()[pri:0, instance:Tests.Registration.RegistrationSuccessfullyTest@4f063c0a]" name="userCanRegisterSuccessfully" duration-ms="2685" started-at="2022-10-03T19:45:03 EET" finished-at="2022-10-03T19:45:05 EET">
+        <test-method status="PASS" signature="userCanRegisterSuccessfully()[pri:0, instance:Tests.Registration.RegistrationSuccessfullyTest@4f063c0a]" name="userCanRegisterSuccessfully" duration-ms="3707" started-at="2022-10-04T23:09:32 EET" finished-at="2022-10-04T23:09:36 EET">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- userCanRegisterSuccessfully -->
-        <test-method status="PASS" signature="screenshotOnFailure(org.testng.ITestResult)[pri:0, instance:Tests.Registration.RegistrationSuccessfullyTest@4f063c0a]" name="screenshotOnFailure" is-config="true" duration-ms="0" started-at="2022-10-03T19:45:05 EET" finished-at="2022-10-03T19:45:05 EET">
+        <test-method status="PASS" signature="screenshotOnFailure(org.testng.ITestResult)[pri:0, instance:Tests.Registration.RegistrationSuccessfullyTest@4f063c0a]" name="screenshotOnFailure" is-config="true" duration-ms="1" started-at="2022-10-04T23:09:36 EET" finished-at="2022-10-04T23:09:36 EET">
           <params>
             <param index="0">
               <value>
@@ -100,11 +100,11 @@
         </test-method> <!-- screenshotOnFailure -->
       </class> <!-- Tests.Registration.RegistrationSuccessfullyTest -->
       <class name="Tests.Login.LoginSuccessfullyTest">
-        <test-method status="PASS" signature="userCanLoginWithValidEmailAndPassword()[pri:0, instance:Tests.Login.LoginSuccessfullyTest@1e6d1014]" name="userCanLoginWithValidEmailAndPassword" duration-ms="117" started-at="2022-10-03T19:45:05 EET" finished-at="2022-10-03T19:45:05 EET">
+        <test-method status="PASS" signature="userCanLoginWithValidEmailAndPassword()[pri:0, instance:Tests.Login.LoginSuccessfullyTest@1e6d1014]" name="userCanLoginWithValidEmailAndPassword" duration-ms="336" started-at="2022-10-04T23:09:36 EET" finished-at="2022-10-04T23:09:36 EET">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- userCanLoginWithValidEmailAndPassword -->
-        <test-method status="PASS" signature="screenshotOnFailure(org.testng.ITestResult)[pri:0, instance:Tests.Login.LoginSuccessfullyTest@1e6d1014]" name="screenshotOnFailure" is-config="true" duration-ms="0" started-at="2022-10-03T19:45:05 EET" finished-at="2022-10-03T19:45:05 EET">
+        <test-method status="PASS" signature="screenshotOnFailure(org.testng.ITestResult)[pri:0, instance:Tests.Login.LoginSuccessfullyTest@1e6d1014]" name="screenshotOnFailure" is-config="true" duration-ms="1" started-at="2022-10-04T23:09:36 EET" finished-at="2022-10-04T23:09:36 EET">
           <params>
             <param index="0">
               <value>
