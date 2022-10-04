@@ -21,7 +21,7 @@ public class Helper {
             out.write(((TakesScreenshot) driver).getScreenshotAs(OutputType.BYTES));
             out.close();
         } catch (IOException e) {
-            System.out.println("Excpetion while taking screenshot"+ e.getMessage());
+            System.out.println("Exception while taking screenshot"+ e.getMessage());
         }
     }
 }
