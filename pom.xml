@@ -43,6 +43,18 @@
             <version>1.7.36</version>
             <scope>test</scope>
         </dependency>
+        <dependency>
+            <groupId>io.codearte.jfairy</groupId>
+            <artifactId>jfairy</artifactId>
+            <version>0.5.9</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>io.codearte.jfairy</groupId>
+            <artifactId>jfairy</artifactId>
+            <version>0.5.1</version>
+            <scope>main</scope>
+        </dependency>
 
     </dependencies>
 </project>
