@@ -142,7 +142,6 @@ public class RegistrationPage extends PageBase{
     }
 
     public String generatePassword() {
-
         String characters = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz!@#$%&()";
         String pwd = RandomStringUtils.random( 9, characters );
         // It will generate 9 digit random Number.
