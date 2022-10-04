@@ -2,7 +2,6 @@ package Pages;
 
 import org.openqa.selenium.*;
 import org.openqa.selenium.interactions.Actions;
-import org.openqa.selenium.net.UrlChecker;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.Select;
 
@@ -67,16 +66,7 @@ public class PageBase {
         JavascriptExecutor js = (JavascriptExecutor) driver;
         js.executeScript(coordinates, "");
     }
-    public boolean isExist (WebElement element)  {
 
-        try {
-            element.getTagName();
-            return true;
-        }
-        catch (NoSuchElementException e){
-            return false;
-        }
-    }
 
 
 
