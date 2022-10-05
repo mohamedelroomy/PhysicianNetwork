@@ -8,7 +8,6 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
-import org.openqa.selenium.support.ui.ExpectedCondition;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import java.time.Duration;
@@ -89,10 +88,8 @@ public class RegistrationPage extends PageBase{
         insertTextIntoElement(specialtySearch,Specialty.getName());
         waits(400);
         new WebDriverWait(driver, Duration.ofSeconds(20)).until(ExpectedConditions.visibilityOf(mainSpecialtyList));
-
         // re-declare mainSpecialtyList to choose the inserted specialty after the list has changed by inserting specialty name
         mainSpecialtyList = driver.findElement(By.id("registrationMainSpecialty_options"));
-
         //choose the inserted specialty
         List <WebElement> SpecialtiesOptions = mainSpecialtyList.findElements(By.tagName("li"));
         for (WebElement e: SpecialtiesOptions) {

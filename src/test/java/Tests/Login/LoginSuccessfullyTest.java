@@ -3,8 +3,6 @@ package Tests.Login;
 import Pages.LoginPage;
 import Tests.Registration.RegistrationSuccessfullyTest;
 import Tests.TestBase;
-import org.openqa.selenium.net.UrlChecker;
-import org.testng.Assert;
 import org.testng.annotations.Test;
 
 
