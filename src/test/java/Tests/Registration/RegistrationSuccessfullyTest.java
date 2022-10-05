@@ -29,7 +29,6 @@ public class RegistrationSuccessfullyTest extends TestBase {
         Password = SignUp.generatePassword();
         gender = getRandomGender();
 //        login.openRegistrationPage();
-
         SignUp.completeUserInfo(
                 gender.getFirstName(),
                 gender.getLastName(),

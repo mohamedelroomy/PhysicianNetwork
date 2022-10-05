@@ -12,9 +12,9 @@ import org.openqa.selenium.WebDriver;
 public class Helper {
 
     // Method to take screenshot when the test cases fail
-    public static void captureScreenshot(WebDriver driver , String screenshotname)
+    public static void captureScreenshot(WebDriver driver , String ScreenShotName)
     {
-        Path dest = Paths.get("./Screenshots",screenshotname+".png");
+        Path dest = Paths.get("./Screenshots", ScreenShotName +".png");
         try {
             Files.createDirectories(dest.getParent());
             FileOutputStream out = new FileOutputStream(dest.toString());
