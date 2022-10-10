@@ -32,8 +32,14 @@ public class LoginPage extends PageBase {
     @FindBy (id = "togglePasswordInput")
     WebElement EyeIcon;
 
+    @FindBy (xpath = "/html/body/app-root/div/app-auth/div/div[2]/app-login/div/form/div[2]/div/a")
+    WebElement ForgetPasswordBTN;
+
     public void openRegistrationPage (){
         clickOnElement(registerNow);
+    }
+    public void openForgetPasswordPage (){
+        clickOnElement(ForgetPasswordBTN);
     }
 
     public void completeLoginInput (String mail,String password){
