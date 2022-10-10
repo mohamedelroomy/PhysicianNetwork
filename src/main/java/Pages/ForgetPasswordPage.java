@@ -13,7 +13,7 @@ public class ForgetPasswordPage extends PageBase {
 
     @FindBy (id = "forgotPassEmail")
     WebElement Email;
-    @FindBy (id = "/html/body/app-root/div/app-auth/div/div[2]/app-forgot-password/div/form/button")
+    @FindBy (xpath = "/html/body/app-root/div/app-auth/div/div[2]/app-forgot-password/div/form/button")
     WebElement SendLink;
 
     public void insertEmail(String email){
@@ -24,6 +24,7 @@ public class ForgetPasswordPage extends PageBase {
         clickOnElement(SendLink);
     }
     public String getLink(){
-        return getForgetPasswordToken(insertedEmail);
+        String token = getForgetPasswordToken(insertedEmail);
+        return "http://18.197.85.177:5104/ChangePassword?token="+token;
     }
 }
