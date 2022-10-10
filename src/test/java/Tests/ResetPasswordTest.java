@@ -3,7 +3,6 @@ package Tests;
 import Pages.ChooseNewPasswordPage;
 import Pages.ForgetPasswordPage;
 import Pages.LoginPage;
-import Tests.Registration.RegistrationSuccessfullyTest;
 import org.testng.annotations.Test;
 
 import java.time.Duration;
