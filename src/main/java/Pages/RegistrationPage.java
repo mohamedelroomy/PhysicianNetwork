@@ -60,7 +60,7 @@ public class RegistrationPage extends PageBase{
     @FindBy (xpath = "//button[@type = 'submit']")
     WebElement createAccountBTN;
 
-    @FindBy (xpath = "/html/body/ejs-toast/div/div/div[2]")
+    @FindBy (xpath = "/html/body/app-root/div/app-toaster/ngb-toast/div")
     WebElement toasterMessage;
 
 
