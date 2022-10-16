@@ -19,7 +19,8 @@ public class DataBase {
     public static String getForgetPasswordToken (String Email)   {
         try {
             connectToSecurityDataBase();
-            String query = "SELECT TOP (10) [ForgetPassword_token] FROM [Ahbs.PhysicianNetwork.Services.Security].[dbo].[Users] where [Email] ='"+Email+"' And [ForgetPassword_token] is not null";
+            String query = "SELECT TOP (10) [ForgetPassword_token] FROM [Ahbs.PhysicianNetwork.Services.Security].[dbo].[Users]" +
+                    " where [Email] ='"+Email+"' And [ForgetPassword_token] is not null";
             Statement st = conn.createStatement();
             ResultSet rs = st.executeQuery(query);
             String token = null;
