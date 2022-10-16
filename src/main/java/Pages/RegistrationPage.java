@@ -145,8 +145,7 @@ public class RegistrationPage extends PageBase{
         // from 0 to 99999999
         Random rnd = new Random();
         int number = rnd.nextInt(99999999);
-        String pass = String.format("%06d", number) + pwd;
-        return pass;
+        return String.format("%06d", number) + pwd;
     }
 
     public String generateEmail(){
