@@ -49,6 +49,11 @@
             <version>0.5.1</version>
             <scope>main</scope>
         </dependency>
+        <dependency>
+            <groupId>com.microsoft.sqlserver</groupId>
+            <artifactId>mssql-jdbc</artifactId>
+            <version>11.2.0.jre8</version>
+        </dependency>
 
     </dependencies>
 </project>
