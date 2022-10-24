@@ -10,8 +10,10 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import static Enums.Country.getRandomCountry;
+import static Enums.Gender.getRandomGender;
 
 public class RegistrationWithExistedEmailTest extends TestBase {
+    Gender gender ;
     Country country = getRandomCountry();
     LoginPage login;
     RegistrationPage SignUp;
@@ -23,15 +25,16 @@ public class RegistrationWithExistedEmailTest extends TestBase {
         login = new LoginPage(driver);
         SignUp = new RegistrationPage(driver);
         login.openRegistrationPage();
+        gender = getRandomGender();
         SignUp.completeUserInfo(
-                "mohamed",
-                "elroomy",
+                gender.getFirstName(),
+                gender.getLastName(),
                 Specialties.getRandomSpecialty(),
                 country,
                 country.generatePhoneNumber(),
                 email,
                 SignUp.generatePassword(),
-                Gender.male);
+                gender);
         SignUp.submit();
         System.out.println("the Message is "+SignUp.getToasterMSG());
         Assert.assertTrue(SignUp.getToasterMSG().contains(ToasterMessage));

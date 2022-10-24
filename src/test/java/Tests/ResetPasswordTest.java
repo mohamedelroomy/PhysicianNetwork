@@ -46,8 +46,8 @@ public class ResetPasswordTest extends TestBase{
                 Password,
                 gender);
         SignUp.submit();
-//        System.out.println("the Message is "+SignUp.getToasterMSG());
-//        Assert.assertTrue(SignUp.getToasterMSG().contains(ToasterMessage));
+        System.out.println("the Message is "+SignUp.getToasterMSG());
+        Assert.assertTrue(SignUp.getToasterMSG().contains(ToasterMessage));
     }
     @Test (priority = 1)
     public void userInsertRegisteredEmail()  {
