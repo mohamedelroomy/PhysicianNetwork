@@ -10,13 +10,16 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+
+import java.nio.file.Path;
+import java.nio.file.Paths;
 import java.time.Duration;
 import java.util.List;
 import java.util.Random;
 
 
 public class RegistrationPage extends PageBase{
-
+    Path dest = Paths.get("./Photos", "3.PNG");
     public RegistrationPage(WebDriver driver) {
         super(driver);
     }
@@ -60,6 +63,9 @@ public class RegistrationPage extends PageBase{
     @FindBy (xpath = "//button[@type = 'submit']")
     WebElement createAccountBTN;
 
+    @FindBy (id = "registrationMedicalLicense")
+    WebElement license;
+
     @FindBy (xpath = "/html/body/app-root/div/app-toaster/ngb-toast/div")
     WebElement toasterMessage;
 
@@ -70,6 +76,7 @@ public class RegistrationPage extends PageBase{
                                   String PhoneNumber,String Email,String Password, Gender gender)  {
         insertTextIntoElement(firstName,FirstName);
         insertTextIntoElement(lastName, LastName);
+        insertTextIntoElement(license,dest.toAbsolutePath().toString());
         clickOnElement(mainSpecialtyDDL);
         selectMainSpecialty(Specialty);
         clickOnElement(countryCodeDDL);

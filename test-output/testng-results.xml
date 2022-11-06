@@ -1,46 +1,42 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="10" total="16" passed="6">
+<testng-results skipped="0" failed="0" ignored="5" total="11" passed="6">
   <reporter-output>
   </reporter-output>
-  <suite name="All Test Suite" duration-ms="10644" started-at="2022-10-23T11:47:07 EET" finished-at="2022-10-23T11:47:17 EET">
+  <suite name="All Test Suite" duration-ms="11767" started-at="2022-10-29T11:37:03 EET" finished-at="2022-10-29T11:37:15 EET">
     <groups>
     </groups>
-    <test name="F:/PhysicianNetwork/PhysicianNetwork" duration-ms="10644" started-at="2022-10-23T11:47:07 EET" finished-at="2022-10-23T11:47:17 EET">
+    <test name="F:/PhysicianNetwork/PhysicianNetwork" duration-ms="11767" started-at="2022-10-29T11:37:03 EET" finished-at="2022-10-29T11:37:15 EET">
       <class name="Tests.Login.LoginWithInvalidEmailTest">
-        <test-method status="PASS" signature="start()[pri:0, instance:Tests.Login.LoginWithInvalidEmailTest@a7e666]" name="start" is-config="true" duration-ms="7517" started-at="2022-10-23T11:46:59 EET" finished-at="2022-10-23T11:47:07 EET">
+        <test-method status="PASS" signature="start()[pri:0, instance:Tests.Login.LoginWithInvalidEmailTest@1f554b06]" name="start" is-config="true" duration-ms="5237" started-at="2022-10-29T11:36:58 EET" finished-at="2022-10-29T11:37:03 EET">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- start -->
-        <test-method status="PASS" signature="userCanNotLoginWithInvalidEmail()[pri:0, instance:Tests.Login.LoginWithInvalidEmailTest@a7e666]" name="userCanNotLoginWithInvalidEmail" duration-ms="636" started-at="2022-10-23T11:47:07 EET" finished-at="2022-10-23T11:47:07 EET">
+        <test-method status="PASS" signature="userCanNotLoginWithInvalidEmail()[pri:0, instance:Tests.Login.LoginWithInvalidEmailTest@1f554b06]" name="userCanNotLoginWithInvalidEmail" duration-ms="566" started-at="2022-10-29T11:37:03 EET" finished-at="2022-10-29T11:37:04 EET">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- userCanNotLoginWithInvalidEmail -->
-        <test-method status="PASS" signature="screenshotOnFailure(org.testng.ITestResult)[pri:0, instance:Tests.Login.LoginWithInvalidEmailTest@a7e666]" name="screenshotOnFailure" is-config="true" duration-ms="1" started-at="2022-10-23T11:47:07 EET" finished-at="2022-10-23T11:47:07 EET">
+        <test-method status="PASS" signature="screenshotOnFailure(org.testng.ITestResult)[pri:0, instance:Tests.Login.LoginWithInvalidEmailTest@1f554b06]" name="screenshotOnFailure" is-config="true" duration-ms="1" started-at="2022-10-29T11:37:04 EET" finished-at="2022-10-29T11:37:04 EET">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=userCanNotLoginWithInvalidEmail status=SUCCESS method=LoginWithInvalidEmailTest.userCanNotLoginWithInvalidEmail()[pri:0, instance:Tests.Login.LoginWithInvalidEmailTest@a7e666] output={null}]]]>
+                <![CDATA[[TestResult name=userCanNotLoginWithInvalidEmail status=SUCCESS method=LoginWithInvalidEmailTest.userCanNotLoginWithInvalidEmail()[pri:0, instance:Tests.Login.LoginWithInvalidEmailTest@1f554b06] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- screenshotOnFailure -->
-        <test-method status="PASS" signature="exit()[pri:0, instance:Tests.Login.LoginWithInvalidEmailTest@a7e666]" name="exit" is-config="true" duration-ms="614" started-at="2022-10-23T11:47:17 EET" finished-at="2022-10-23T11:47:18 EET">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- exit -->
       </class> <!-- Tests.Login.LoginWithInvalidEmailTest -->
       <class name="Tests.Registration.RegistrationWithExistedPhoneNumberTest">
-        <test-method status="PASS" signature="userCanRegisterSuccessfully()[pri:0, instance:Tests.Registration.RegistrationWithExistedPhoneNumberTest@4f063c0a]" name="userCanRegisterSuccessfully" duration-ms="3103" started-at="2022-10-23T11:47:11 EET" finished-at="2022-10-23T11:47:14 EET">
+        <test-method status="PASS" signature="userCanRegisterSuccessfully()[pri:0, instance:Tests.Registration.RegistrationWithExistedPhoneNumberTest@64729b1e]" name="userCanRegisterSuccessfully" duration-ms="2672" started-at="2022-10-29T11:37:10 EET" finished-at="2022-10-29T11:37:12 EET">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- userCanRegisterSuccessfully -->
-        <test-method status="PASS" signature="screenshotOnFailure(org.testng.ITestResult)[pri:0, instance:Tests.Registration.RegistrationWithExistedPhoneNumberTest@4f063c0a]" name="screenshotOnFailure" is-config="true" duration-ms="1" started-at="2022-10-23T11:47:14 EET" finished-at="2022-10-23T11:47:14 EET">
+        <test-method status="PASS" signature="screenshotOnFailure(org.testng.ITestResult)[pri:0, instance:Tests.Registration.RegistrationWithExistedPhoneNumberTest@64729b1e]" name="screenshotOnFailure" is-config="true" duration-ms="0" started-at="2022-10-29T11:37:12 EET" finished-at="2022-10-29T11:37:12 EET">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=userCanRegisterSuccessfully status=SUCCESS method=RegistrationWithExistedPhoneNumberTest.userCanRegisterSuccessfully()[pri:0, instance:Tests.Registration.RegistrationWithExistedPhoneNumberTest@4f063c0a] output={null}]]]>
+                <![CDATA[[TestResult name=userCanRegisterSuccessfully status=SUCCESS method=RegistrationWithExistedPhoneNumberTest.userCanRegisterSuccessfully()[pri:0, instance:Tests.Registration.RegistrationWithExistedPhoneNumberTest@64729b1e] output={null}]]]>
               </value>
             </param>
           </params>
@@ -49,15 +45,15 @@
         </test-method> <!-- screenshotOnFailure -->
       </class> <!-- Tests.Registration.RegistrationWithExistedPhoneNumberTest -->
       <class name="Tests.Login.LoginWithInvalidPassTest">
-        <test-method status="PASS" signature="userCanNotLoginWithInvalidEmail()[pri:0, instance:Tests.Login.LoginWithInvalidPassTest@5a8806ef]" name="userCanNotLoginWithInvalidEmail" duration-ms="440" started-at="2022-10-23T11:47:07 EET" finished-at="2022-10-23T11:47:08 EET">
+        <test-method status="PASS" signature="userCanNotLoginWithInvalidEmail()[pri:0, instance:Tests.Login.LoginWithInvalidPassTest@71bbf57e]" name="userCanNotLoginWithInvalidEmail" duration-ms="2359" started-at="2022-10-29T11:37:04 EET" finished-at="2022-10-29T11:37:06 EET">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- userCanNotLoginWithInvalidEmail -->
-        <test-method status="PASS" signature="screenshotOnFailure(org.testng.ITestResult)[pri:0, instance:Tests.Login.LoginWithInvalidPassTest@5a8806ef]" name="screenshotOnFailure" is-config="true" duration-ms="1" started-at="2022-10-23T11:47:08 EET" finished-at="2022-10-23T11:47:08 EET">
+        <test-method status="PASS" signature="screenshotOnFailure(org.testng.ITestResult)[pri:0, instance:Tests.Login.LoginWithInvalidPassTest@71bbf57e]" name="screenshotOnFailure" is-config="true" duration-ms="1" started-at="2022-10-29T11:37:06 EET" finished-at="2022-10-29T11:37:06 EET">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=userCanNotLoginWithInvalidEmail status=SUCCESS method=LoginWithInvalidPassTest.userCanNotLoginWithInvalidEmail()[pri:0, instance:Tests.Login.LoginWithInvalidPassTest@5a8806ef] output={null}]]]>
+                <![CDATA[[TestResult name=userCanNotLoginWithInvalidEmail status=SUCCESS method=LoginWithInvalidPassTest.userCanNotLoginWithInvalidEmail()[pri:0, instance:Tests.Login.LoginWithInvalidPassTest@71bbf57e] output={null}]]]>
               </value>
             </param>
           </params>
@@ -66,15 +62,15 @@
         </test-method> <!-- screenshotOnFailure -->
       </class> <!-- Tests.Login.LoginWithInvalidPassTest -->
       <class name="Tests.Registration.RegistrationWithExistedEmailTest">
-        <test-method status="PASS" signature="userCanRegisterSuccessfully()[pri:0, instance:Tests.Registration.RegistrationWithExistedEmailTest@2a17b7b6]" name="userCanRegisterSuccessfully" duration-ms="3464" started-at="2022-10-23T11:47:08 EET" finished-at="2022-10-23T11:47:11 EET">
+        <test-method status="PASS" signature="userCanRegisterSuccessfully()[pri:0, instance:Tests.Registration.RegistrationWithExistedEmailTest@4e7dc304]" name="userCanRegisterSuccessfully" duration-ms="3313" started-at="2022-10-29T11:37:06 EET" finished-at="2022-10-29T11:37:10 EET">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- userCanRegisterSuccessfully -->
-        <test-method status="PASS" signature="screenshotOnFailure(org.testng.ITestResult)[pri:0, instance:Tests.Registration.RegistrationWithExistedEmailTest@2a17b7b6]" name="screenshotOnFailure" is-config="true" duration-ms="0" started-at="2022-10-23T11:47:11 EET" finished-at="2022-10-23T11:47:11 EET">
+        <test-method status="PASS" signature="screenshotOnFailure(org.testng.ITestResult)[pri:0, instance:Tests.Registration.RegistrationWithExistedEmailTest@4e7dc304]" name="screenshotOnFailure" is-config="true" duration-ms="1" started-at="2022-10-29T11:37:10 EET" finished-at="2022-10-29T11:37:10 EET">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=userCanRegisterSuccessfully status=SUCCESS method=RegistrationWithExistedEmailTest.userCanRegisterSuccessfully()[pri:0, instance:Tests.Registration.RegistrationWithExistedEmailTest@2a17b7b6] output={null}]]]>
+                <![CDATA[[TestResult name=userCanRegisterSuccessfully status=SUCCESS method=RegistrationWithExistedEmailTest.userCanRegisterSuccessfully()[pri:0, instance:Tests.Registration.RegistrationWithExistedEmailTest@4e7dc304] output={null}]]]>
               </value>
             </param>
           </params>
@@ -83,15 +79,15 @@
         </test-method> <!-- screenshotOnFailure -->
       </class> <!-- Tests.Registration.RegistrationWithExistedEmailTest -->
       <class name="Tests.Registration.RegistrationSuccessfullyTest">
-        <test-method status="PASS" signature="userCanRegisterSuccessfully()[pri:0, instance:Tests.Registration.RegistrationSuccessfullyTest@1e6d1014]" name="userCanRegisterSuccessfully" duration-ms="2818" started-at="2022-10-23T11:47:14 EET" finished-at="2022-10-23T11:47:17 EET">
+        <test-method status="PASS" signature="userCanRegisterSuccessfully()[pri:0, instance:Tests.Registration.RegistrationSuccessfullyTest@10bbd20a]" name="userCanRegisterSuccessfully" duration-ms="2704" started-at="2022-10-29T11:37:12 EET" finished-at="2022-10-29T11:37:15 EET">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- userCanRegisterSuccessfully -->
-        <test-method status="PASS" signature="screenshotOnFailure(org.testng.ITestResult)[pri:0, instance:Tests.Registration.RegistrationSuccessfullyTest@1e6d1014]" name="screenshotOnFailure" is-config="true" duration-ms="0" started-at="2022-10-23T11:47:17 EET" finished-at="2022-10-23T11:47:17 EET">
+        <test-method status="PASS" signature="screenshotOnFailure(org.testng.ITestResult)[pri:0, instance:Tests.Registration.RegistrationSuccessfullyTest@10bbd20a]" name="screenshotOnFailure" is-config="true" duration-ms="1" started-at="2022-10-29T11:37:15 EET" finished-at="2022-10-29T11:37:15 EET">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=userCanRegisterSuccessfully status=SUCCESS method=RegistrationSuccessfullyTest.userCanRegisterSuccessfully()[pri:0, instance:Tests.Registration.RegistrationSuccessfullyTest@1e6d1014] output={null}]]]>
+                <![CDATA[[TestResult name=userCanRegisterSuccessfully status=SUCCESS method=RegistrationSuccessfullyTest.userCanRegisterSuccessfully()[pri:0, instance:Tests.Registration.RegistrationSuccessfullyTest@10bbd20a] output={null}]]]>
               </value>
             </param>
           </params>
@@ -100,15 +96,15 @@
         </test-method> <!-- screenshotOnFailure -->
       </class> <!-- Tests.Registration.RegistrationSuccessfullyTest -->
       <class name="Tests.Login.LoginSuccessfullyTest">
-        <test-method status="PASS" signature="userCanLoginWithValidEmailAndPassword()[pri:0, instance:Tests.Login.LoginSuccessfullyTest@76707e36]" name="userCanLoginWithValidEmailAndPassword" duration-ms="158" started-at="2022-10-23T11:47:17 EET" finished-at="2022-10-23T11:47:17 EET">
+        <test-method status="PASS" signature="userCanLoginWithValidEmailAndPassword()[pri:0, instance:Tests.Login.LoginSuccessfullyTest@48503868]" name="userCanLoginWithValidEmailAndPassword" duration-ms="131" started-at="2022-10-29T11:37:15 EET" finished-at="2022-10-29T11:37:15 EET">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- userCanLoginWithValidEmailAndPassword -->
-        <test-method status="PASS" signature="screenshotOnFailure(org.testng.ITestResult)[pri:0, instance:Tests.Login.LoginSuccessfullyTest@76707e36]" name="screenshotOnFailure" is-config="true" duration-ms="0" started-at="2022-10-23T11:47:17 EET" finished-at="2022-10-23T11:47:17 EET">
+        <test-method status="PASS" signature="screenshotOnFailure(org.testng.ITestResult)[pri:0, instance:Tests.Login.LoginSuccessfullyTest@48503868]" name="screenshotOnFailure" is-config="true" duration-ms="0" started-at="2022-10-29T11:37:15 EET" finished-at="2022-10-29T11:37:15 EET">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=userCanLoginWithValidEmailAndPassword status=SUCCESS method=LoginSuccessfullyTest.userCanLoginWithValidEmailAndPassword()[pri:0, instance:Tests.Login.LoginSuccessfullyTest@76707e36] output={null}]]]>
+                <![CDATA[[TestResult name=userCanLoginWithValidEmailAndPassword status=SUCCESS method=LoginSuccessfullyTest.userCanLoginWithValidEmailAndPassword()[pri:0, instance:Tests.Login.LoginSuccessfullyTest@48503868] output={null}]]]>
               </value>
             </param>
           </params>
