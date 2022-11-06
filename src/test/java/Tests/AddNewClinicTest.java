@@ -10,6 +10,8 @@ import Tests.Registration.RegistrationSuccessfullyTest;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
+import java.time.Duration;
+
 import static Enums.Country.Egypt;
 import static Enums.Country.getRandomCountry;
 import static Enums.Gender.getRandomGender;
@@ -43,7 +45,6 @@ public class AddNewClinicTest extends TestBase {
                 Email,
                 Password,
                 gender);
-        SignUp.waits(8000);
         SignUp.submit();
         System.out.println("the Message is "+SignUp.getToasterMSG());
         Assert.assertTrue(SignUp.getToasterMSG().contains(ToasterMessage));
@@ -56,7 +57,7 @@ public class AddNewClinicTest extends TestBase {
         }
         else login.completeLoginInput(Email,Password);
         login.login();
-        login.waits(3000);
+        login.waits(1500);
     }
 
    @Test(priority = 2)

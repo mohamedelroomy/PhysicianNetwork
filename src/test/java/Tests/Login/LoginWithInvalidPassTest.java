@@ -13,11 +13,11 @@ public class LoginWithInvalidPassTest extends TestBase {
 
 
     @Test
-    public void userCanNotLoginWithInvalidEmail(){
+    public void userCanNotLoginWithInvalidPassword(){
         login = new LoginPage(driver);
         login.completeLoginInput(email,password);
-        login.login();
         login.viewPassword();
+        login.login();
         Assert.assertTrue(login.getValidationMSG().contains(ValidationMSG));
         driver.navigate().refresh();
     }
