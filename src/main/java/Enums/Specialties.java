@@ -3,9 +3,9 @@ package Enums;
 import java.util.Random;
 
 public enum Specialties {
-    ClinicalHematology {
+    Cardiology {
         final String id = "0";
-        final String name ="Clinical Hematology";
+        final String name ="Cardiology";
         public String getName() {
             return name;
         }
@@ -13,9 +13,9 @@ public enum Specialties {
             return id;
         }} ,
 
-    GeneralCheckup {
+    Neurospsychiatry {
         final String id = "1";
-        final String name ="General Checkup";
+        final String name ="Neurospsychiatry";
         public String getName() {
             return name;
         }
@@ -43,9 +43,9 @@ public enum Specialties {
         public String getID (){
             return id;
         }},
-    Endocrinology{
+    ClinicalOncology{
         final String id = "4";
-        final String name ="Endocrinology";
+        final String name ="Clinical oncology";
 
         public String getName() {
             return name;
@@ -53,9 +53,9 @@ public enum Specialties {
         public String getID (){
             return id;
         }},
-    Nephrology{
+    Nutrition{
         final String id = "5";
-        final String name ="Nephrology";
+        final String name ="Nutrition";
 
         public String getName() {
             return name;
@@ -63,9 +63,9 @@ public enum Specialties {
         public String getID (){
             return id;
         }},
-    Gastroenterology {
+    Physiotherapy {
         final String id = "6";
-        final String name ="Gastroenterology";
+        final String name ="Physiotherapy";
 
         public String getName() {
             return name;
@@ -73,16 +73,16 @@ public enum Specialties {
         public String getID (){
             return id;
         }},
-    Rheumatology {
+    Radiology {
         final String id = "7";
-        final String name ="Rheumatology";
+        final String name ="Radiology";
 
         public String getName() {return name;}
         public String getID (){
             return id;
         }},
-    GeriatricMedicine{ final String id = "8";
-        final String name ="Geriatric medicine";
+    Dentistry{ final String id = "8";
+        final String name ="Dentistry";
 
         public String getName() {return name;}
         public String getID (){

@@ -93,7 +93,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">3 methods,   3 passed</span>
+                    <span class="method-stats">6 methods,   6 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -109,7 +109,22 @@
                       <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-All_Test_Suite" title="Tests.Login.LoginWithInvalidEmailTest" hash-for-method="userCanNotLoginWithInvalidEmail">userCanNotLoginWithInvalidEmail</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-All_Test_Suite" title="Tests.Login.LoginWithInvalidPassTest" hash-for-method="userCanNotLoginWithInvalidPassword">userCanNotLoginWithInvalidPassword</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-All_Test_Suite" title="Tests.Registration.RegistrationWithExistedEmailTest" hash-for-method="userCanNotRegisterWithExistedEmail">userCanNotRegisterWithExistedEmail</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-All_Test_Suite" title="Tests.Registration.RegistrationWithExistedPhoneNumberTest" hash-for-method="userCanNotRegisterWithExistedPhone">userCanNotRegisterWithExistedPhone</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -129,6 +144,51 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-All_Test_Suite" class="panel All_Test_Suite">
+          <div class="suite-All_Test_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">Tests.Login.LoginWithInvalidPassTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="userCanNotLoginWithInvalidPassword">
+                  </a> <!-- userCanNotLoginWithInvalidPassword -->
+                  <span class="method-name">userCanNotLoginWithInvalidPassword</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-All_Test_Suite-class-passed -->
+          <div class="suite-All_Test_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">Tests.Registration.RegistrationWithExistedEmailTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="userCanNotRegisterWithExistedEmail">
+                  </a> <!-- userCanNotRegisterWithExistedEmail -->
+                  <span class="method-name">userCanNotRegisterWithExistedEmail</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-All_Test_Suite-class-passed -->
+          <div class="suite-All_Test_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">Tests.Registration.RegistrationWithExistedPhoneNumberTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="userCanNotRegisterWithExistedPhone">
+                  </a> <!-- userCanNotRegisterWithExistedPhone -->
+                  <span class="method-name">userCanNotRegisterWithExistedPhone</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-All_Test_Suite-class-passed -->
           <div class="suite-All_Test_Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -162,14 +222,14 @@
           <div class="suite-All_Test_Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">Tests.Registration.RegistrationWithExistedEmailTest</span>
+              <span class="class-name">Tests.Login.LoginWithInvalidEmailTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="userCanNotRegisterWithExistedEmail">
-                  </a> <!-- userCanNotRegisterWithExistedEmail -->
-                  <span class="method-name">userCanNotRegisterWithExistedEmail</span>
+                  <a name="userCanNotLoginWithInvalidEmail">
+                  </a> <!-- userCanNotLoginWithInvalidEmail -->
+                  <span class="method-name">userCanNotLoginWithInvalidEmail</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -186,7 +246,10 @@
 &lt;suite guice-stage=&quot;DEVELOPMENT&quot; name=&quot;All Test Suite&quot;&gt;
   &lt;test thread-count=&quot;5&quot; verbose=&quot;2&quot; name=&quot;F:/PhysicianNetwork/PhysicianNetwork&quot;&gt;
     &lt;classes&gt;
+      &lt;class name=&quot;Tests.Login.LoginWithInvalidEmailTest&quot;/&gt;
+      &lt;class name=&quot;Tests.Login.LoginWithInvalidPassTest&quot;/&gt;
       &lt;class name=&quot;Tests.Registration.RegistrationWithExistedEmailTest&quot;/&gt;
+      &lt;class name=&quot;Tests.Registration.RegistrationWithExistedPhoneNumberTest&quot;/&gt;
       &lt;class name=&quot;Tests.Registration.RegistrationSuccessfullyTest&quot;/&gt;
       &lt;class name=&quot;Tests.Login.LoginSuccessfullyTest&quot;/&gt;
     &lt;/classes&gt;
@@ -202,7 +265,7 @@
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">F:/PhysicianNetwork/PhysicianNetwork (3 classes)</span>
+                <span class="test-name">F:/PhysicianNetwork/PhysicianNetwork (6 classes)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -228,24 +291,36 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(3);
+data.addRows(6);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'userCanNotRegisterWithExistedEmail')
 data.setCell(0, 2, 'Tests.Registration.RegistrationWithExistedEmailTest')
-data.setCell(0, 3, 4477);
+data.setCell(0, 3, 6466);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'userCanRegisterSuccessfully')
 data.setCell(1, 2, 'Tests.Registration.RegistrationSuccessfullyTest')
-data.setCell(1, 3, 4006);
+data.setCell(1, 3, 5872);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'userCanLoginWithValidEmailAndPassword')
-data.setCell(2, 2, 'Tests.Login.LoginSuccessfullyTest')
-data.setCell(2, 3, 150);
+data.setCell(2, 1, 'userCanNotRegisterWithExistedPhone')
+data.setCell(2, 2, 'Tests.Registration.RegistrationWithExistedPhoneNumberTest')
+data.setCell(2, 3, 5130);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'userCanNotLoginWithInvalidEmail')
+data.setCell(3, 2, 'Tests.Login.LoginWithInvalidEmailTest')
+data.setCell(3, 3, 1348);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'userCanNotLoginWithInvalidPassword')
+data.setCell(4, 2, 'Tests.Login.LoginWithInvalidPassTest')
+data.setCell(4, 3, 1029);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'userCanLoginWithValidEmailAndPassword')
+data.setCell(5, 2, 'Tests.Login.LoginSuccessfullyTest')
+data.setCell(5, 3, 369);
 window.suiteTableData['All_Test_Suite']= { tableData: data, tableDiv: 'times-div-All_Test_Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 8 seconds</span>
+              <span class="suite-total-time">Total running time: 20 seconds</span>
               <div id="times-div-All_Test_Suite">
               </div> <!-- times-div-All_Test_Suite -->
             </div> <!-- times-div -->
@@ -260,11 +335,25 @@ return data;
         </div> <!-- panel -->
         <div panel-name="ignored-methods-All_Test_Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">2 ignored methods</span>
+            <span class="header-content">5 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="ignored-class-div">
-              <span class="ignored-class-name">Tests.Registration.RegistrationSuccessfullyTest</span>
+              <span class="ignored-class-name">Tests.Login.LoginWithInvalidPassTest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">start</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">Tests.Registration.RegistrationWithExistedEmailTest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">start</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">Tests.Registration.RegistrationWithExistedPhoneNumberTest</span>
               <div class="ignored-methods-div">
                 <span class="ignored-method-name">start</span>
                 <br/>
@@ -272,6 +361,13 @@ return data;
             </div> <!-- ignored-class-div -->
             <div class="ignored-class-div">
               <span class="ignored-class-name">Tests.Login.LoginSuccessfullyTest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">start</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">Tests.Registration.RegistrationSuccessfullyTest</span>
               <div class="ignored-methods-div">
                 <span class="ignored-method-name">start</span>
                 <br/>
@@ -285,40 +381,73 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">Tests.Registration.RegistrationWithExistedEmailTest</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">Tests.Login.LoginWithInvalidEmailTest</div> <!-- chronological-class-name -->
               <div class="configuration-suite before">
                 <span class="method-name">start</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-suite before -->
               <div class="test-method">
+                <span class="method-name">userCanNotLoginWithInvalidEmail</span>
+                <span class="method-start">5622 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">screenshotOnFailure([TestResult name=userCanNotLoginWithInvalidEmail status=SUCCESS method=LoginWithInvalidEmailTest.use...)</span>
+                <span class="method-start">6974 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">Tests.Login.LoginWithInvalidPassTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">userCanNotLoginWithInvalidPassword</span>
+                <span class="method-start">6989 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">screenshotOnFailure([TestResult name=userCanNotLoginWithInvalidPassword status=SUCCESS method=LoginWithInvalidPassTest.u...)</span>
+                <span class="method-start">8019 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">Tests.Registration.RegistrationWithExistedEmailTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
                 <span class="method-name">userCanNotRegisterWithExistedEmail</span>
-                <span class="method-start">4229 ms</span>
+                <span class="method-start">8020 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">screenshotOnFailure([TestResult name=userCanNotRegisterWithExistedEmail status=SUCCESS method=RegistrationWithExistedEma...)</span>
-                <span class="method-start">8708 ms</span>
+                <span class="method-start">14486 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">Tests.Registration.RegistrationWithExistedPhoneNumberTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">userCanNotRegisterWithExistedPhone</span>
+                <span class="method-start">14490 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">screenshotOnFailure([TestResult name=userCanNotRegisterWithExistedPhone status=SUCCESS method=RegistrationWithExistedPho...)</span>
+                <span class="method-start">19621 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">Tests.Registration.RegistrationSuccessfullyTest</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">userCanRegisterSuccessfully</span>
-                <span class="method-start">8712 ms</span>
+                <span class="method-start">19624 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">screenshotOnFailure([TestResult name=userCanRegisterSuccessfully status=SUCCESS method=RegistrationSuccessfullyTest.user...)</span>
-                <span class="method-start">12718 ms</span>
+                <span class="method-start">25497 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">Tests.Login.LoginSuccessfullyTest</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">userCanLoginWithValidEmailAndPassword</span>
-                <span class="method-start">12719 ms</span>
+                <span class="method-start">25499 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">screenshotOnFailure([TestResult name=userCanLoginWithValidEmailAndPassword status=SUCCESS method=LoginSuccessfullyTest.u...)</span>
-                <span class="method-start">12869 ms</span>
+                <span class="method-start">25869 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
