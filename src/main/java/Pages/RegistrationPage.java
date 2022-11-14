@@ -17,6 +17,9 @@ import java.time.Duration;
 import java.util.List;
 import java.util.Random;
 
+import static Utilities.DataBase.getForgetPasswordToken;
+import static Utilities.DataBase.getUserID;
+
 
 public class RegistrationPage extends PageBase{
     Path dest = Paths.get("./Photos", "3.PNG");
@@ -165,5 +168,9 @@ public class RegistrationPage extends PageBase{
         }
         String saltStr = salt.toString();
         return saltStr + "@gmail.com";
+    }
+    public String UserID(String email){
+        String ID = getUserID(email);
+        return ID;
     }
 }

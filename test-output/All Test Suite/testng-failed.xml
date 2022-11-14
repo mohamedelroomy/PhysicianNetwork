@@ -3,13 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [All Test Suite]">
   <test thread-count="5" name="F:/PhysicianNetwork/PhysicianNetwork(failed)">
     <classes>
-      <class name="Tests.Registration.RegistrationWithExistedEmailTest">
+      <class name="Tests.Registration.RegistrationSuccessfullyTest">
         <methods>
+          <include name="userCanRegisterSuccessfully"/>
           <include name="start"/>
           <include name="screenshotOnFailure"/>
-          <include name="userCanRegisterSuccessfully"/>
         </methods>
-      </class> <!-- Tests.Registration.RegistrationWithExistedEmailTest -->
+      </class> <!-- Tests.Registration.RegistrationSuccessfullyTest -->
     </classes>
   </test> <!-- F:/PhysicianNetwork/PhysicianNetwork(failed) -->
 </suite> <!-- Failed suite [All Test Suite] -->
