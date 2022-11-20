@@ -38,4 +38,28 @@ public class DataBase {
         }
         return null;
     }
+
+
+    public static String getUserID (String Email)   {
+        try {
+            connectToSecurityDataBase();
+            String query = "SELECT TOP (10) [Id] FROM [Ahbs.PhysicianNetwork.Services.Security].[dbo].[Users]" +
+                    " where [Email] ='"+Email+"'";
+            Statement st = conn.createStatement();
+            ResultSet rs = st.executeQuery(query);
+            String id = null;
+            while (rs.next()) {
+                id =rs.getString("Id");
+            }
+            conn.close();
+            return id;
+        }
+        catch (SQLException e){
+            System.out.println(e.getMessage());
+        }
+        catch (ClassNotFoundException e){
+            System.out.println(e.getMessage());
+        }
+        return null;
+    }
 }

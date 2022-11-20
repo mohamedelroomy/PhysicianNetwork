@@ -20,7 +20,7 @@ public class RegistrationWithExistedPhoneNumberTest extends TestBase {
     private String ToasterMessage = "Email or Mobile Phone already exists";
 
     @Test
-    public void userCanRegisterSuccessfully ()   {
+    public void userCanNotRegisterWithExistedPhone  ()   {
         login = new LoginPage(driver);
         SignUp = new RegistrationPage(driver);
         gender = getRandomGender();

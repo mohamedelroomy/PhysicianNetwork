@@ -1,10 +1,21 @@
 package Enums;
 
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
 import java.util.Random;
 
 public enum Country {
     Egypt{
         final String Code ="+20";
+        final String Name = "Egypt";
+        final List<City> cities = Arrays.asList(City.Alexandria,City.Cairo);
+
+        public List<City> getCities() {
+            return cities;
+        }
+
+        public String getName() {return Name;}
         public String getCode (){
             return Code;
         }
@@ -16,6 +27,14 @@ public enum Country {
     },
     SaudiArabia{
         final String Code ="+966";
+        final String Name = "Saudi Arabia";
+        final List<City> cities = new ArrayList<>();
+
+        public List<City> getCities() {
+            return cities;
+        }
+
+        public String getName() {return Name;}
         public String getCode (){
             return Code;
         }
@@ -25,7 +44,10 @@ public enum Country {
             return number1 +String.valueOf(number2);
         }
     };
+
+    public abstract String getName();
     public abstract String getCode();
+    public abstract List<City> getCities();
     public abstract String generatePhoneNumber();
     public static Country getRandomCountry(){
         int length = Country.values().length;

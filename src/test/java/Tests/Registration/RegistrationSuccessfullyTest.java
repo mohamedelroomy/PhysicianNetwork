@@ -41,6 +41,7 @@ public class RegistrationSuccessfullyTest extends TestBase {
         SignUp.submit();
         System.out.println("the Message is "+SignUp.getToasterMSG());
         Assert.assertTrue(SignUp.getToasterMSG().contains(ToasterMessage));
+        System.out.println("The user ID is : "+SignUp.UserID(Email));;
     }
 
 }

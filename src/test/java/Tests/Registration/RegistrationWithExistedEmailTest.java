@@ -21,7 +21,7 @@ public class RegistrationWithExistedEmailTest extends TestBase {
     private String ToasterMessage = "Email or Mobile Phone already exists";
 
     @Test
-    public void userCanRegisterSuccessfully ()   {
+    public void userCanNotRegisterWithExistedEmail ()   {
         login = new LoginPage(driver);
         SignUp = new RegistrationPage(driver);
         login.openRegistrationPage();
